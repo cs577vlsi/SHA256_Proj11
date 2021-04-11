@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:57.326+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('data_0_load_2', SHA_new/SHA_new/sha256_impl.c:36) on array 'data_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'data_0'." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:50.961+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:125) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.525+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (SHA_new/SHA_new/sha256_impl.c:117) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.510+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 12 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:58:1) in function 'sha256'." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.494+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 40 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:58:1) in function 'sha256'." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.494+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 100 to 63 for loop 'Loop-0-1' (SHA_new/SHA_new/sha256.c:47:1) in function 'sha256'." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.473+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-3' (SHA_new/SHA_new/sha256_impl.c:51) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.473+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:38) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.458+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-4' (SHA_new/SHA_new/sha256_impl.c:151) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.442+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'Loop-3' (SHA_new/SHA_new/sha256_impl.c:130) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex_with_hardware" date="2021-04-11T11:39:25.427+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:44.410+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('data_0_load_2', SHA_new/SHA_new/sha256_impl.c:36) on array 'data_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'data_0'." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:38.231+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:125) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.554+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (SHA_new/SHA_new/sha256_impl.c:117) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.538+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 12 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:58:1) in function 'sha256'." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.523+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 40 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:58:1) in function 'sha256'." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.523+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 100 to 63 for loop 'Loop-0-1' (SHA_new/SHA_new/sha256.c:47:1) in function 'sha256'." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.507+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-3' (SHA_new/SHA_new/sha256_impl.c:51) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.507+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:38) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.501+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-4' (SHA_new/SHA_new/sha256_impl.c:151) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.485+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'Loop-3' (SHA_new/SHA_new/sha256_impl.c:130) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_Kintex" date="2021-04-10T15:24:11.485+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:14:16.139+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('data_0_load_2', SHA_new/SHA_new/sha256_impl.c:36) on array 'data_0' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'data_0'." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:14:10.099+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:123) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.909+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (SHA_new/SHA_new/sha256_impl.c:116) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.886+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 12 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.879+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 40 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.873+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 100 to 63 for loop 'Loop-0-1' (SHA_new/SHA_new/sha256.c:46:1) in function 'sha256'." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.866+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-3' (SHA_new/SHA_new/sha256_impl.c:51) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.859+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:38) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.853+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-4' (SHA_new/SHA_new/sha256_impl.c:148) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_spartanBoard" date="2021-04-07T18:13:45.846+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:07:16.000+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:123) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.714+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (SHA_new/SHA_new/sha256_impl.c:116) in function 'sha256_final' completely: variable loop bound." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.708+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 12 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.701+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 40 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.694+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 100 to 63 for loop 'Loop-0-1' (SHA_new/SHA_new/sha256.c:46:1) in function 'sha256'." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.688+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-3' (SHA_new/SHA_new/sha256_impl.c:51) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.682+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-2' (SHA_new/SHA_new/sha256_impl.c:38) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.664+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-4' (SHA_new/SHA_new/sha256_impl.c:148) because its parent loop or function is pipelined." projectName="SHA" solutionName="solution2_array_partition_pipeline" date="2021-04-07T18:06:49.656+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 12 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution2_array_partition" date="2021-04-07T17:47:17.327+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 40 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution2_array_partition" date="2021-04-07T17:47:17.299+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 100 to 63 for loop 'Loop-0-1' (SHA_new/SHA_new/sha256.c:46:1) in function 'sha256'." projectName="SHA" solutionName="solution2_array_partition" date="2021-04-07T17:47:17.292+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 12 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution1" date="2021-04-07T17:44:52.552+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 40 to 32 for loop 'Loop-1' (SHA_new/SHA_new/sha256.c:57:1) in function 'sha256'." projectName="SHA" solutionName="solution1" date="2021-04-07T17:44:52.527+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 100 to 63 for loop 'Loop-0-1' (SHA_new/SHA_new/sha256.c:46:1) in function 'sha256'." projectName="SHA" solutionName="solution1" date="2021-04-07T17:44:52.521+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
