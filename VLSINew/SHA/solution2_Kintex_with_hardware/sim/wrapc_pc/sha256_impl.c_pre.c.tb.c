@@ -748,7 +748,7 @@ void sha256_transform(SHA256_CTX *ctx, unsigned char data[])
  m[i] = (data[j] << 24) | (data[j+1] << 16) | (data[j+2] << 8) | (data[j+3]);
    }
    for ( ; i < 64; ++i){
-#pragma HLS pipeline II=1
+#pragma HLS pipeline II=2
  m[i] = SIG1(m[i-2]) + m[i-7] + SIG0(m[i-15]) + m[i-16];
    }
    a = ctx->state[0];
@@ -761,7 +761,7 @@ void sha256_transform(SHA256_CTX *ctx, unsigned char data[])
    h = ctx->state[7];
 
    for (i = 0; i < 64; ++i) {
-#pragma HLS pipeline II=1
+#pragma HLS pipeline II=2
  t1 = h + EP1(e) + CH(e,f,g) + k[i] + m[i];
       t2 = EP0(a) + MAJ(a,b,c);
       h = g;
@@ -786,8 +786,8 @@ void sha256_transform(SHA256_CTX *ctx, unsigned char data[])
 
 void sha256_init(SHA256_CTX *ctx)
 {
-
-   ctx->datalen = 0;
+#pragma HLS inline
+ ctx->datalen = 0;
    ctx->bitlen[0] = 0;
    ctx->bitlen[1] = 0;
    ctx->state[0] = 0x6a09e667;
@@ -821,25 +821,27 @@ void sha256_final(SHA256_CTX *ctx, unsigned char hash[])
  unsigned int i;
 
  i = ctx->datalen;
-#pragma HLS pipeline II=1
+
 
  if (ctx->datalen < 56) {
-  ctx->data[i++] = 0x80;
+#pragma HLS pipeline II=2
+ ctx->data[i++] = 0x80;
   while (i < 56){
 #pragma HLS loop_tripcount min=0 max=56
  ctx->data[i++] = 0x00;
   }
  }
  else {
-  ctx->data[i++] = 0x80;
+#pragma HLS pipeline II=2
+ ctx->data[i++] = 0x80;
   while (i < 64){
 #pragma HLS loop_tripcount min=0 max=8
  ctx->data[i++] = 0x00;
   }
   sha256_transform(ctx,ctx->data);
   for( i = 0; i < 56; i++ ) {
-
-   ctx->data[i] = 0x00;
+#pragma HLS unroll factor=2
+ ctx->data[i] = 0x00;
   }
  }
 
@@ -859,7 +861,7 @@ void sha256_final(SHA256_CTX *ctx, unsigned char hash[])
 
 
    for (i=0; i < 4; ++i) {
-#pragma HLS pipeline II=1
+#pragma HLS pipeline II=2
  hash[i] = (ctx->state[0] >> (24-i*8)) & 0x000000ff;
       hash[i+4] = (ctx->state[1] >> (24-i*8)) & 0x000000ff;
       hash[i+8] = (ctx->state[2] >> (24-i*8)) & 0x000000ff;

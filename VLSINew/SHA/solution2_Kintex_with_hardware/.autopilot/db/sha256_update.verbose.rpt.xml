@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sha256_update'" level="0">
-<item name = "Date">Sun Apr 11 11:40:09 2021
+<item name = "Date">Wed Apr 14 12:12:45 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">SHA</item>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">1, 48, 1, 48, none</column>
+<column name="">1, 49, 1, 49, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_sha256_transform_fu_274">sha256_transform, 39, 39, 8, 8, function</column>
+<column name="grp_sha256_transform_fu_246">sha256_transform, 40, 40, 8, 8, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">0, 47, 3 ~ 47, -, -, 0 ~ 1, no</column>
+<column name="- Loop 1">0, 48, 3 ~ 48, -, -, 0 ~ 1, no</column>
 </table>
 </item>
 </section>
@@ -49,21 +49,21 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 215, -</column>
+<column name="Expression">-, -, 0, 85, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, -, 15341, 46693, -</column>
+<column name="Instance">0, -, 11278, 23504, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 483, -</column>
-<column name="Register">-, -, 423, -, -</column>
+<column name="Multiplexer">-, -, -, 469, -</column>
+<column name="Register">-, -, 360, -, -</column>
 <specialColumn name="Available">720, 1152, 290880, 145440, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 5, 32, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 4, 16, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_sha256_transform_fu_274">sha256_transform, 0, 0, 15341, 46693, 0</column>
+<column name="grp_sha256_transform_fu_246">sha256_transform, 0, 0, 11278, 23504, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -80,21 +80,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln101_1_fu_575_p2">+, 0, 0, 39, 32, 10</column>
-<column name="add_ln101_fu_561_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln98_fu_501_p2">+, 0, 0, 39, 32, 1</column>
-<column name="i_fu_399_p2">+, 0, 0, 15, 7, 1</column>
-<column name="icmp_ln101_fu_555_p2">icmp, 0, 0, 20, 32, 11</column>
-<column name="icmp_ln95_fu_394_p2">icmp, 0, 0, 11, 7, 7</column>
-<column name="icmp_ln99_fu_507_p2">icmp, 0, 0, 20, 32, 7</column>
-<column name="select_ln101_fu_567_p3">select, 0, 0, 32, 1, 32</column>
+<column name="add_ln130_fu_445_p2">+, 0, 0, 39, 32, 1</column>
+<column name="i_fu_355_p2">+, 0, 0, 15, 7, 1</column>
+<column name="icmp_ln127_fu_350_p2">icmp, 0, 0, 11, 7, 7</column>
+<column name="icmp_ln131_fu_451_p2">icmp, 0, 0, 20, 32, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">213, 49, 1, 49</column>
-<column name="ctx_bitlen_0_0_fu_118">9, 2, 32, 64</column>
-<column name="ctx_bitlen_1_0_fu_114">9, 2, 32, 64</column>
+<column name="ap_NS_fsm">217, 50, 1, 50</column>
 <column name="ctx_data_0_address0">15, 3, 4, 12</column>
 <column name="ctx_data_0_ce0">15, 3, 1, 3</column>
 <column name="ctx_data_0_ce1">9, 2, 1, 2</column>
@@ -107,37 +101,35 @@
 <column name="ctx_data_3_address0">15, 3, 4, 12</column>
 <column name="ctx_data_3_ce0">15, 3, 1, 3</column>
 <column name="ctx_data_3_ce1">9, 2, 1, 2</column>
-<column name="ctx_datalen_0_fu_78">15, 3, 32, 96</column>
-<column name="ctx_state_0_0_fu_110">9, 2, 32, 64</column>
-<column name="ctx_state_1_0_fu_106">9, 2, 32, 64</column>
-<column name="ctx_state_2_0_fu_102">9, 2, 32, 64</column>
-<column name="ctx_state_3_0_fu_98">9, 2, 32, 64</column>
-<column name="ctx_state_4_0_fu_94">9, 2, 32, 64</column>
-<column name="ctx_state_5_0_fu_90">9, 2, 32, 64</column>
-<column name="ctx_state_6_0_fu_86">9, 2, 32, 64</column>
-<column name="ctx_state_7_0_fu_82">9, 2, 32, 64</column>
-<column name="i_0_reg_263">9, 2, 7, 14</column>
+<column name="ctx_datalen_0_fu_70">15, 3, 32, 96</column>
+<column name="ctx_state_0_0_fu_102">9, 2, 32, 64</column>
+<column name="ctx_state_1_0_fu_98">9, 2, 32, 64</column>
+<column name="ctx_state_2_0_fu_94">9, 2, 32, 64</column>
+<column name="ctx_state_3_0_fu_90">9, 2, 32, 64</column>
+<column name="ctx_state_4_0_fu_86">9, 2, 32, 64</column>
+<column name="ctx_state_5_0_fu_82">9, 2, 32, 64</column>
+<column name="ctx_state_6_0_fu_78">9, 2, 32, 64</column>
+<column name="ctx_state_7_0_fu_74">9, 2, 32, 64</column>
+<column name="i_0_reg_235">9, 2, 7, 14</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">48, 0, 48, 0</column>
-<column name="ctx_bitlen_0_0_fu_118">32, 0, 32, 0</column>
-<column name="ctx_bitlen_1_0_fu_114">32, 0, 32, 0</column>
-<column name="ctx_datalen_0_fu_78">32, 0, 32, 0</column>
-<column name="ctx_state_0_0_fu_110">32, 0, 32, 0</column>
-<column name="ctx_state_1_0_fu_106">32, 0, 32, 0</column>
-<column name="ctx_state_2_0_fu_102">32, 0, 32, 0</column>
-<column name="ctx_state_3_0_fu_98">32, 0, 32, 0</column>
-<column name="ctx_state_4_0_fu_94">32, 0, 32, 0</column>
-<column name="ctx_state_5_0_fu_90">32, 0, 32, 0</column>
-<column name="ctx_state_6_0_fu_86">32, 0, 32, 0</column>
-<column name="ctx_state_7_0_fu_82">32, 0, 32, 0</column>
-<column name="empty_reg_710">7, 0, 7, 0</column>
-<column name="grp_sha256_transform_fu_274_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_0_reg_263">7, 0, 7, 0</column>
-<column name="i_reg_718">7, 0, 7, 0</column>
-<column name="icmp_ln99_reg_731">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">49, 0, 49, 0</column>
+<column name="ctx_datalen_0_fu_70">32, 0, 32, 0</column>
+<column name="ctx_state_0_0_fu_102">32, 0, 32, 0</column>
+<column name="ctx_state_1_0_fu_98">32, 0, 32, 0</column>
+<column name="ctx_state_2_0_fu_94">32, 0, 32, 0</column>
+<column name="ctx_state_3_0_fu_90">32, 0, 32, 0</column>
+<column name="ctx_state_4_0_fu_86">32, 0, 32, 0</column>
+<column name="ctx_state_5_0_fu_82">32, 0, 32, 0</column>
+<column name="ctx_state_6_0_fu_78">32, 0, 32, 0</column>
+<column name="ctx_state_7_0_fu_74">32, 0, 32, 0</column>
+<column name="empty_reg_604">7, 0, 7, 0</column>
+<column name="grp_sha256_transform_fu_246_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_reg_235">7, 0, 7, 0</column>
+<column name="i_reg_612">7, 0, 7, 0</column>
+<column name="icmp_ln131_reg_625">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -162,8 +154,6 @@
 <column name="ap_return_6">out, 32, ap_ctrl_hs, sha256_update, return value</column>
 <column name="ap_return_7">out, 32, ap_ctrl_hs, sha256_update, return value</column>
 <column name="ap_return_8">out, 32, ap_ctrl_hs, sha256_update, return value</column>
-<column name="ap_return_9">out, 32, ap_ctrl_hs, sha256_update, return value</column>
-<column name="ap_return_10">out, 32, ap_ctrl_hs, sha256_update, return value</column>
 <column name="ctx_data_0_address0">out, 4, ap_memory, ctx_data_0, array</column>
 <column name="ctx_data_0_ce0">out, 1, ap_memory, ctx_data_0, array</column>
 <column name="ctx_data_0_we0">out, 1, ap_memory, ctx_data_0, array</column>
@@ -205,8 +195,6 @@
 <column name="p_read6">in, 32, ap_none, p_read6, scalar</column>
 <column name="p_read7">in, 32, ap_none, p_read7, scalar</column>
 <column name="p_read8">in, 32, ap_none, p_read8, scalar</column>
-<column name="p_read9">in, 32, ap_none, p_read9, scalar</column>
-<column name="p_read10">in, 32, ap_none, p_read10, scalar</column>
 <column name="data_address0">out, 6, ap_memory, data, array</column>
 <column name="data_ce0">out, 1, ap_memory, data, array</column>
 <column name="data_q0">in, 8, ap_memory, data, array</column>

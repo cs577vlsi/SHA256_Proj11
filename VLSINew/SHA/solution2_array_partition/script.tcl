@@ -5,8 +5,8 @@
 ############################################################
 open_project SHA
 set_top sha256
-add_files SHA_new/SHA_new/sha256.c
 add_files SHA_new/SHA_new/sha256_impl.c
+add_files SHA_new/SHA_new/sha256.c
 add_files -tb SHA_new/SHA_new/sha256_tb.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution2_array_partition"
 set_part {xc7z020-clg484-1}

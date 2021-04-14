@@ -833,6 +833,38 @@ unsigned int k[64] = {
    0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2
 };
 
+void DBL_INT_ADD(unsigned int *a, unsigned int *b, unsigned int c) {
+   if (a > 0xffffffff - (c)) ++b; a += c;
+   return;
+}
+
+unsigned int ROTRIGHT(unsigned int a,unsigned int b){
+   return (((a) >> (b)) | ((a) << (32-(b))));
+}
+
+unsigned int CH(unsigned int x, unsigned int y, unsigned int z){
+   return (((x) & (y)) ^ (~(x) & (z)));
+}
+
+unsigned int MAJ(unsigned int x, unsigned int y,unsigned int z){
+   return (((x) & (y)) ^ ((x) & (z)) ^ ((y) & (z)));
+}
+
+unsigned int EP0(unsigned int x){
+   return (ROTRIGHT(x,2) ^ ROTRIGHT(x,13) ^ ROTRIGHT(x,22));
+}
+
+unsigned int EP1(unsigned int x){
+   return (ROTRIGHT(x,6) ^ ROTRIGHT(x,11) ^ ROTRIGHT(x,25));
+}
+
+unsigned int SIG0(unsigned int x){
+   return (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3));
+}
+
+unsigned int SIG1(unsigned int x){
+   return (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10));
+}
 
 void sha256_transform(SHA256_CTX *ctx, unsigned char data[])
 {
@@ -844,7 +876,7 @@ _ssdm_SpecArrayPartition( data, 1, "CYCLIC", 4, "");
    }
    for ( ; i < 64; ++i){
 _ssdm_op_SpecPipeline(2, 1, 1, 0, "");
- m[i] = ((((m[i-2]) >> (17)) | ((m[i-2]) << (32 -(17)))) ^ (((m[i-2]) >> (19)) | ((m[i-2]) << (32 -(19)))) ^ ((m[i-2]) >> 10)) + m[i-7] + ((((m[i-15]) >> (7)) | ((m[i-15]) << (32 -(7)))) ^ (((m[i-15]) >> (18)) | ((m[i-15]) << (32 -(18)))) ^ ((m[i-15]) >> 3)) + m[i-16];
+ m[i] = SIG1(m[i-2]) + m[i-7] + SIG0(m[i-15]) + m[i-16];
    }
    a = ctx->state[0];
    b = ctx->state[1];
@@ -857,8 +889,8 @@ _ssdm_op_SpecPipeline(2, 1, 1, 0, "");
 
    for (i = 0; i < 64; ++i) {
 _ssdm_op_SpecPipeline(2, 1, 1, 0, "");
- t1 = h + ((((e) >> (6)) | ((e) << (32 -(6)))) ^ (((e) >> (11)) | ((e) << (32 -(11)))) ^ (((e) >> (25)) | ((e) << (32 -(25))))) + (((e) & (f)) ^ (~(e) & (g))) + k[i] + m[i];
-      t2 = ((((a) >> (2)) | ((a) << (32 -(2)))) ^ (((a) >> (13)) | ((a) << (32 -(13)))) ^ (((a) >> (22)) | ((a) << (32 -(22))))) + (((a) & (b)) ^ ((a) & (c)) ^ ((b) & (c)));
+ t1 = h + EP1(e) + CH(e,f,g) + k[i] + m[i];
+      t2 = EP0(a) + MAJ(a,b,c);
       h = g;
       g = f;
       f = e;
@@ -905,7 +937,7 @@ _ssdm_op_SpecLoopTripCount(0, 1, 0, "");
       ctx->datalen++;
       if (ctx->datalen == 64) {
          sha256_transform(ctx,ctx->data);
-         if (ctx->bitlen[0] > 0xffffffff - (512)) ++ctx->bitlen[1]; ctx->bitlen[0] += 512;;
+         DBL_INT_ADD(&ctx->bitlen[0],&ctx->bitlen[1],512);
          ctx->datalen = 0;
       }
    }
@@ -942,7 +974,7 @@ _ssdm_Unroll(1, 0, 2, "");
 
 
 
-   if (ctx->bitlen[0] > 0xffffffff - (ctx->datalen * 8)) ++ctx->bitlen[1]; ctx->bitlen[0] += ctx->datalen * 8;;
+   DBL_INT_ADD(&ctx->bitlen[0],&ctx->bitlen[1],ctx->datalen * 8);
    ctx->data[63] = ctx->bitlen[0];
    ctx->data[62] = ctx->bitlen[0] >> 8;
    ctx->data[61] = ctx->bitlen[0] >> 16;

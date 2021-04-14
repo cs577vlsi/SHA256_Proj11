@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 46
+set ID 52
 set hasByteEnable 0
 set MemName sha256_seg_buf
 set CoreName ap_simcore_mem
@@ -86,7 +86,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 47
+set ID 53
 set hasByteEnable 0
 set MemName sha256_sha256ctx_bkb
 set CoreName ap_simcore_mem
@@ -223,7 +223,7 @@ dict set axilite_register_dict AXILiteS $port_AXILiteS
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 48 \
+			id 54 \
 			corename sha256_AXILiteS_axilite \
 			name sha256_AXILiteS_s_axi \
 			ports {$port_AXILiteS} \

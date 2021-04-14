@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sha256'" level="0">
-<item name = "Date">Sun Apr 11 11:39:58 2021
+<item name = "Date">Wed Apr 14 12:12:40 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">SHA</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">461, 18085, 461, 18085, none</column>
+<column name="">461, 18187, 461, 18187, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">336, 17900, 28 ~ 179, -, -, 12 ~ 100, no</column>
+<column name="- Loop 1">336, 18000, 28 ~ 180, -, -, 12 ~ 100, no</column>
 <column name=" + Loop 1.1">128, 128, 2, -, -, 64, no</column>
 <column name=" + Loop 1.2">24, 126, 2, -, -, 12 ~ 63, no</column>
 <column name="- Loop 2">64, 64, 2, -, -, 32, no</column>

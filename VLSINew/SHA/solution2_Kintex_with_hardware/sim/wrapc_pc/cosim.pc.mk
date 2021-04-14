@@ -64,10 +64,10 @@ $(ObjDir)/sha256_tb.c_pre.c.tb.o : sha256_tb.c_pre.c.tb.c $(ObjDir)/.dir
 	$(Echo) "   Compiling (apcc) sha256_tb.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/sha256.c_pre.c.tb.o : sha256.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) sha256.c_pre.c.tb.c" $(AVE_DIR_DLOG)
-	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
 $(ObjDir)/sha256_impl.c_pre.c.tb.o : sha256_impl.c_pre.c.tb.c $(ObjDir)/.dir
 	$(Echo) "   Compiling (apcc) sha256_impl.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/sha256.c_pre.c.tb.o : sha256.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) sha256.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \

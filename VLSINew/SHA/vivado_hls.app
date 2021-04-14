@@ -6,8 +6,8 @@
     </Simulation>
     <files xmlns="">
         <file name="../../SHA_new/SHA_new/sha256_tb.c" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="SHA_new/SHA_new/sha256_impl.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="SHA_new/SHA_new/sha256.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="SHA_new/SHA_new/sha256_impl.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
         <solution name="solution1" status="inactive"/>

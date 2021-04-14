@@ -14,61 +14,62 @@ namespace ap_rtl {
 
 const sc_logic sha256_update::ap_const_logic_1 = sc_dt::Log_1;
 const sc_logic sha256_update::ap_const_logic_0 = sc_dt::Log_0;
-const sc_lv<48> sha256_update::ap_ST_fsm_state1 = "1";
-const sc_lv<48> sha256_update::ap_ST_fsm_state2 = "10";
-const sc_lv<48> sha256_update::ap_ST_fsm_state3 = "100";
-const sc_lv<48> sha256_update::ap_ST_fsm_state4 = "1000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state5 = "10000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state6 = "100000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state7 = "1000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state8 = "10000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state9 = "100000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state10 = "1000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state11 = "10000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state12 = "100000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state13 = "1000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state14 = "10000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state15 = "100000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state16 = "1000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state17 = "10000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state18 = "100000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state19 = "1000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state20 = "10000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state21 = "100000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state22 = "1000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state23 = "10000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state24 = "100000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state25 = "1000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state26 = "10000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state27 = "100000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state28 = "1000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state29 = "10000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state30 = "100000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state31 = "1000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state32 = "10000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state33 = "100000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state34 = "1000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state35 = "10000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state36 = "100000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state37 = "1000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state38 = "10000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state39 = "100000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state40 = "1000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state41 = "10000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state42 = "100000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state43 = "1000000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state44 = "10000000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state45 = "100000000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state46 = "1000000000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state47 = "10000000000000000000000000000000000000000000000";
-const sc_lv<48> sha256_update::ap_ST_fsm_state48 = "100000000000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state1 = "1";
+const sc_lv<49> sha256_update::ap_ST_fsm_state2 = "10";
+const sc_lv<49> sha256_update::ap_ST_fsm_state3 = "100";
+const sc_lv<49> sha256_update::ap_ST_fsm_state4 = "1000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state5 = "10000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state6 = "100000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state7 = "1000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state8 = "10000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state9 = "100000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state10 = "1000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state11 = "10000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state12 = "100000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state13 = "1000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state14 = "10000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state15 = "100000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state16 = "1000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state17 = "10000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state18 = "100000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state19 = "1000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state20 = "10000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state21 = "100000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state22 = "1000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state23 = "10000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state24 = "100000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state25 = "1000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state26 = "10000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state27 = "100000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state28 = "1000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state29 = "10000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state30 = "100000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state31 = "1000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state32 = "10000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state33 = "100000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state34 = "1000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state35 = "10000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state36 = "100000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state37 = "1000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state38 = "10000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state39 = "100000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state40 = "1000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state41 = "10000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state42 = "100000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state43 = "1000000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state44 = "10000000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state45 = "100000000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state46 = "1000000000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state47 = "10000000000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state48 = "100000000000000000000000000000000000000000000000";
+const sc_lv<49> sha256_update::ap_ST_fsm_state49 = "1000000000000000000000000000000000000000000000000";
 const sc_lv<32> sha256_update::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_lv<32> sha256_update::ap_const_lv32_1 = "1";
 const sc_lv<1> sha256_update::ap_const_lv1_0 = "0";
 const sc_lv<32> sha256_update::ap_const_lv32_2 = "10";
 const sc_lv<32> sha256_update::ap_const_lv32_8 = "1000";
 const sc_lv<7> sha256_update::ap_const_lv7_0 = "0000000";
-const sc_lv<32> sha256_update::ap_const_lv32_2F = "101111";
+const sc_lv<32> sha256_update::ap_const_lv32_30 = "110000";
 const sc_lv<32> sha256_update::ap_const_lv32_7 = "111";
 const sc_lv<32> sha256_update::ap_const_lv32_9 = "1001";
 const sc_lv<32> sha256_update::ap_const_lv32_A = "1010";
@@ -86,72 +87,64 @@ const sc_lv<2> sha256_update::ap_const_lv2_3 = "11";
 const sc_lv<7> sha256_update::ap_const_lv7_1 = "1";
 const sc_lv<32> sha256_update::ap_const_lv32_1F = "11111";
 const sc_lv<32> sha256_update::ap_const_lv32_40 = "1000000";
-const sc_lv<32> sha256_update::ap_const_lv32_FFFFFDFF = "11111111111111111111110111111111";
-const sc_lv<32> sha256_update::ap_const_lv32_200 = "1000000000";
 const bool sha256_update::ap_const_boolean_1 = true;
 
 sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    grp_sha256_transform_fu_274 = new sha256_transform("grp_sha256_transform_fu_274");
-    grp_sha256_transform_fu_274->ap_clk(ap_clk);
-    grp_sha256_transform_fu_274->ap_rst(ap_rst);
-    grp_sha256_transform_fu_274->ap_start(grp_sha256_transform_fu_274_ap_start);
-    grp_sha256_transform_fu_274->ap_done(grp_sha256_transform_fu_274_ap_done);
-    grp_sha256_transform_fu_274->ap_idle(grp_sha256_transform_fu_274_ap_idle);
-    grp_sha256_transform_fu_274->ap_ready(grp_sha256_transform_fu_274_ap_ready);
-    grp_sha256_transform_fu_274->ap_ce(ap_var_for_const0);
-    grp_sha256_transform_fu_274->ctx_state_0_read(ctx_state_0_0_fu_110);
-    grp_sha256_transform_fu_274->ctx_state_1_read(ctx_state_1_0_fu_106);
-    grp_sha256_transform_fu_274->ctx_state_2_read(ctx_state_2_0_fu_102);
-    grp_sha256_transform_fu_274->ctx_state_3_read(ctx_state_3_0_fu_98);
-    grp_sha256_transform_fu_274->ctx_state_4_read(ctx_state_4_0_fu_94);
-    grp_sha256_transform_fu_274->ctx_state_5_read(ctx_state_5_0_fu_90);
-    grp_sha256_transform_fu_274->ctx_state_6_read(ctx_state_6_0_fu_86);
-    grp_sha256_transform_fu_274->ctx_state_7_read(ctx_state_7_0_fu_82);
-    grp_sha256_transform_fu_274->data_0_address0(grp_sha256_transform_fu_274_data_0_address0);
-    grp_sha256_transform_fu_274->data_0_ce0(grp_sha256_transform_fu_274_data_0_ce0);
-    grp_sha256_transform_fu_274->data_0_q0(ctx_data_0_q0);
-    grp_sha256_transform_fu_274->data_0_address1(grp_sha256_transform_fu_274_data_0_address1);
-    grp_sha256_transform_fu_274->data_0_ce1(grp_sha256_transform_fu_274_data_0_ce1);
-    grp_sha256_transform_fu_274->data_0_q1(ctx_data_0_q1);
-    grp_sha256_transform_fu_274->data_1_address0(grp_sha256_transform_fu_274_data_1_address0);
-    grp_sha256_transform_fu_274->data_1_ce0(grp_sha256_transform_fu_274_data_1_ce0);
-    grp_sha256_transform_fu_274->data_1_q0(ctx_data_1_q0);
-    grp_sha256_transform_fu_274->data_1_address1(grp_sha256_transform_fu_274_data_1_address1);
-    grp_sha256_transform_fu_274->data_1_ce1(grp_sha256_transform_fu_274_data_1_ce1);
-    grp_sha256_transform_fu_274->data_1_q1(ctx_data_1_q1);
-    grp_sha256_transform_fu_274->data_2_address0(grp_sha256_transform_fu_274_data_2_address0);
-    grp_sha256_transform_fu_274->data_2_ce0(grp_sha256_transform_fu_274_data_2_ce0);
-    grp_sha256_transform_fu_274->data_2_q0(ctx_data_2_q0);
-    grp_sha256_transform_fu_274->data_2_address1(grp_sha256_transform_fu_274_data_2_address1);
-    grp_sha256_transform_fu_274->data_2_ce1(grp_sha256_transform_fu_274_data_2_ce1);
-    grp_sha256_transform_fu_274->data_2_q1(ctx_data_2_q1);
-    grp_sha256_transform_fu_274->data_3_address0(grp_sha256_transform_fu_274_data_3_address0);
-    grp_sha256_transform_fu_274->data_3_ce0(grp_sha256_transform_fu_274_data_3_ce0);
-    grp_sha256_transform_fu_274->data_3_q0(ctx_data_3_q0);
-    grp_sha256_transform_fu_274->data_3_address1(grp_sha256_transform_fu_274_data_3_address1);
-    grp_sha256_transform_fu_274->data_3_ce1(grp_sha256_transform_fu_274_data_3_ce1);
-    grp_sha256_transform_fu_274->data_3_q1(ctx_data_3_q1);
-    grp_sha256_transform_fu_274->ap_return_0(grp_sha256_transform_fu_274_ap_return_0);
-    grp_sha256_transform_fu_274->ap_return_1(grp_sha256_transform_fu_274_ap_return_1);
-    grp_sha256_transform_fu_274->ap_return_2(grp_sha256_transform_fu_274_ap_return_2);
-    grp_sha256_transform_fu_274->ap_return_3(grp_sha256_transform_fu_274_ap_return_3);
-    grp_sha256_transform_fu_274->ap_return_4(grp_sha256_transform_fu_274_ap_return_4);
-    grp_sha256_transform_fu_274->ap_return_5(grp_sha256_transform_fu_274_ap_return_5);
-    grp_sha256_transform_fu_274->ap_return_6(grp_sha256_transform_fu_274_ap_return_6);
-    grp_sha256_transform_fu_274->ap_return_7(grp_sha256_transform_fu_274_ap_return_7);
+    grp_sha256_transform_fu_246 = new sha256_transform("grp_sha256_transform_fu_246");
+    grp_sha256_transform_fu_246->ap_clk(ap_clk);
+    grp_sha256_transform_fu_246->ap_rst(ap_rst);
+    grp_sha256_transform_fu_246->ap_start(grp_sha256_transform_fu_246_ap_start);
+    grp_sha256_transform_fu_246->ap_done(grp_sha256_transform_fu_246_ap_done);
+    grp_sha256_transform_fu_246->ap_idle(grp_sha256_transform_fu_246_ap_idle);
+    grp_sha256_transform_fu_246->ap_ready(grp_sha256_transform_fu_246_ap_ready);
+    grp_sha256_transform_fu_246->ap_ce(ap_var_for_const0);
+    grp_sha256_transform_fu_246->ctx_state_0_read(ctx_state_0_0_fu_102);
+    grp_sha256_transform_fu_246->ctx_state_1_read(ctx_state_1_0_fu_98);
+    grp_sha256_transform_fu_246->ctx_state_2_read(ctx_state_2_0_fu_94);
+    grp_sha256_transform_fu_246->ctx_state_3_read(ctx_state_3_0_fu_90);
+    grp_sha256_transform_fu_246->ctx_state_4_read(ctx_state_4_0_fu_86);
+    grp_sha256_transform_fu_246->ctx_state_5_read(ctx_state_5_0_fu_82);
+    grp_sha256_transform_fu_246->ctx_state_6_read(ctx_state_6_0_fu_78);
+    grp_sha256_transform_fu_246->ctx_state_7_read(ctx_state_7_0_fu_74);
+    grp_sha256_transform_fu_246->data_0_address0(grp_sha256_transform_fu_246_data_0_address0);
+    grp_sha256_transform_fu_246->data_0_ce0(grp_sha256_transform_fu_246_data_0_ce0);
+    grp_sha256_transform_fu_246->data_0_q0(ctx_data_0_q0);
+    grp_sha256_transform_fu_246->data_0_address1(grp_sha256_transform_fu_246_data_0_address1);
+    grp_sha256_transform_fu_246->data_0_ce1(grp_sha256_transform_fu_246_data_0_ce1);
+    grp_sha256_transform_fu_246->data_0_q1(ctx_data_0_q1);
+    grp_sha256_transform_fu_246->data_1_address0(grp_sha256_transform_fu_246_data_1_address0);
+    grp_sha256_transform_fu_246->data_1_ce0(grp_sha256_transform_fu_246_data_1_ce0);
+    grp_sha256_transform_fu_246->data_1_q0(ctx_data_1_q0);
+    grp_sha256_transform_fu_246->data_1_address1(grp_sha256_transform_fu_246_data_1_address1);
+    grp_sha256_transform_fu_246->data_1_ce1(grp_sha256_transform_fu_246_data_1_ce1);
+    grp_sha256_transform_fu_246->data_1_q1(ctx_data_1_q1);
+    grp_sha256_transform_fu_246->data_2_address0(grp_sha256_transform_fu_246_data_2_address0);
+    grp_sha256_transform_fu_246->data_2_ce0(grp_sha256_transform_fu_246_data_2_ce0);
+    grp_sha256_transform_fu_246->data_2_q0(ctx_data_2_q0);
+    grp_sha256_transform_fu_246->data_2_address1(grp_sha256_transform_fu_246_data_2_address1);
+    grp_sha256_transform_fu_246->data_2_ce1(grp_sha256_transform_fu_246_data_2_ce1);
+    grp_sha256_transform_fu_246->data_2_q1(ctx_data_2_q1);
+    grp_sha256_transform_fu_246->data_3_address0(grp_sha256_transform_fu_246_data_3_address0);
+    grp_sha256_transform_fu_246->data_3_ce0(grp_sha256_transform_fu_246_data_3_ce0);
+    grp_sha256_transform_fu_246->data_3_q0(ctx_data_3_q0);
+    grp_sha256_transform_fu_246->data_3_address1(grp_sha256_transform_fu_246_data_3_address1);
+    grp_sha256_transform_fu_246->data_3_ce1(grp_sha256_transform_fu_246_data_3_ce1);
+    grp_sha256_transform_fu_246->data_3_q1(ctx_data_3_q1);
+    grp_sha256_transform_fu_246->ap_return_0(grp_sha256_transform_fu_246_ap_return_0);
+    grp_sha256_transform_fu_246->ap_return_1(grp_sha256_transform_fu_246_ap_return_1);
+    grp_sha256_transform_fu_246->ap_return_2(grp_sha256_transform_fu_246_ap_return_2);
+    grp_sha256_transform_fu_246->ap_return_3(grp_sha256_transform_fu_246_ap_return_3);
+    grp_sha256_transform_fu_246->ap_return_4(grp_sha256_transform_fu_246_ap_return_4);
+    grp_sha256_transform_fu_246->ap_return_5(grp_sha256_transform_fu_246_ap_return_5);
+    grp_sha256_transform_fu_246->ap_return_6(grp_sha256_transform_fu_246_ap_return_6);
+    grp_sha256_transform_fu_246->ap_return_7(grp_sha256_transform_fu_246_ap_return_7);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
     sensitive << ( ap_clk.pos() );
 
-    SC_METHOD(thread_add_ln101_1_fu_575_p2);
-    sensitive << ( ctx_bitlen_0_0_fu_118 );
-
-    SC_METHOD(thread_add_ln101_fu_561_p2);
-    sensitive << ( ctx_bitlen_1_0_fu_114 );
-
-    SC_METHOD(thread_add_ln98_fu_501_p2);
-    sensitive << ( ctx_datalen_0_fu_78 );
+    SC_METHOD(thread_add_ln130_fu_445_p2);
+    sensitive << ( ctx_datalen_0_fu_70 );
 
     SC_METHOD(thread_ap_CS_fsm_state1);
     sensitive << ( ap_CS_fsm );
@@ -186,7 +179,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     SC_METHOD(thread_ap_CS_fsm_state3);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_CS_fsm_state48);
+    SC_METHOD(thread_ap_CS_fsm_state49);
     sensitive << ( ap_CS_fsm );
 
     SC_METHOD(thread_ap_CS_fsm_state8);
@@ -202,7 +195,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm_state1 );
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( ap_start );
@@ -210,67 +203,57 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
 
     SC_METHOD(thread_ap_return_0);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_datalen_0_fu_78 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_datalen_0_fu_70 );
 
     SC_METHOD(thread_ap_return_1);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_bitlen_0_0_fu_118 );
-
-    SC_METHOD(thread_ap_return_10);
-    sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_7_0_fu_82 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_0_0_fu_102 );
 
     SC_METHOD(thread_ap_return_2);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_bitlen_1_0_fu_114 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_1_0_fu_98 );
 
     SC_METHOD(thread_ap_return_3);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_0_0_fu_110 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_2_0_fu_94 );
 
     SC_METHOD(thread_ap_return_4);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_1_0_fu_106 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_3_0_fu_90 );
 
     SC_METHOD(thread_ap_return_5);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_2_0_fu_102 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_4_0_fu_86 );
 
     SC_METHOD(thread_ap_return_6);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_3_0_fu_98 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_5_0_fu_82 );
 
     SC_METHOD(thread_ap_return_7);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_4_0_fu_94 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_6_0_fu_78 );
 
     SC_METHOD(thread_ap_return_8);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_5_0_fu_90 );
-
-    SC_METHOD(thread_ap_return_9);
-    sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( ctx_state_6_0_fu_86 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( ctx_state_7_0_fu_74 );
 
     SC_METHOD(thread_ctx_data_0_address0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_0_address0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_0_address0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -279,11 +262,11 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sensitive << ( ap_CS_fsm_state15 );
     sensitive << ( ap_CS_fsm_state16 );
     sensitive << ( ap_CS_fsm_state17 );
-    sensitive << ( zext_ln97_1_fu_490_p1 );
+    sensitive << ( zext_ln129_1_fu_434_p1 );
 
     SC_METHOD(thread_ctx_data_0_address1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_0_address1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_0_address1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -296,7 +279,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     SC_METHOD(thread_ctx_data_0_ce0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_0_ce0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_0_ce0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -308,7 +291,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_0_ce1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_0_ce1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_0_ce1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -324,12 +307,12 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_0_we0);
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( trunc_ln97_fu_476_p1 );
+    sensitive << ( trunc_ln129_fu_420_p1 );
 
     SC_METHOD(thread_ctx_data_1_address0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_1_address0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_1_address0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -338,11 +321,11 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sensitive << ( ap_CS_fsm_state15 );
     sensitive << ( ap_CS_fsm_state16 );
     sensitive << ( ap_CS_fsm_state17 );
-    sensitive << ( zext_ln97_1_fu_490_p1 );
+    sensitive << ( zext_ln129_1_fu_434_p1 );
 
     SC_METHOD(thread_ctx_data_1_address1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_1_address1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_1_address1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -355,7 +338,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     SC_METHOD(thread_ctx_data_1_ce0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_1_ce0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_1_ce0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -367,7 +350,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_1_ce1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_1_ce1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_1_ce1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -383,12 +366,12 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_1_we0);
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( trunc_ln97_fu_476_p1 );
+    sensitive << ( trunc_ln129_fu_420_p1 );
 
     SC_METHOD(thread_ctx_data_2_address0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_2_address0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_2_address0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -397,11 +380,11 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sensitive << ( ap_CS_fsm_state15 );
     sensitive << ( ap_CS_fsm_state16 );
     sensitive << ( ap_CS_fsm_state17 );
-    sensitive << ( zext_ln97_1_fu_490_p1 );
+    sensitive << ( zext_ln129_1_fu_434_p1 );
 
     SC_METHOD(thread_ctx_data_2_address1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_2_address1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_2_address1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -414,7 +397,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     SC_METHOD(thread_ctx_data_2_ce0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_2_ce0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_2_ce0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -426,7 +409,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_2_ce1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_2_ce1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_2_ce1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -442,12 +425,12 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_2_we0);
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( trunc_ln97_fu_476_p1 );
+    sensitive << ( trunc_ln129_fu_420_p1 );
 
     SC_METHOD(thread_ctx_data_3_address0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_3_address0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_3_address0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -456,11 +439,11 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sensitive << ( ap_CS_fsm_state15 );
     sensitive << ( ap_CS_fsm_state16 );
     sensitive << ( ap_CS_fsm_state17 );
-    sensitive << ( zext_ln97_1_fu_490_p1 );
+    sensitive << ( zext_ln129_1_fu_434_p1 );
 
     SC_METHOD(thread_ctx_data_3_address1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_3_address1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_3_address1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -473,7 +456,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     SC_METHOD(thread_ctx_data_3_ce0);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_3_ce0 );
+    sensitive << ( grp_sha256_transform_fu_246_data_3_ce0 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -485,7 +468,7 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_3_ce1);
     sensitive << ( ap_CS_fsm_state9 );
-    sensitive << ( grp_sha256_transform_fu_274_data_3_ce1 );
+    sensitive << ( grp_sha256_transform_fu_246_data_3_ce1 );
     sensitive << ( ap_CS_fsm_state10 );
     sensitive << ( ap_CS_fsm_state11 );
     sensitive << ( ap_CS_fsm_state12 );
@@ -501,68 +484,58 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_ctx_data_3_we0);
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( trunc_ln97_fu_476_p1 );
+    sensitive << ( trunc_ln129_fu_420_p1 );
 
     SC_METHOD(thread_data_address0);
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( zext_ln97_fu_405_p1 );
+    sensitive << ( zext_ln129_fu_361_p1 );
 
     SC_METHOD(thread_data_ce0);
     sensitive << ( ap_CS_fsm_state2 );
 
-    SC_METHOD(thread_empty_fu_335_p1);
+    SC_METHOD(thread_empty_fu_301_p1);
     sensitive << ( len );
 
-    SC_METHOD(thread_grp_sha256_transform_fu_274_ap_start);
-    sensitive << ( grp_sha256_transform_fu_274_ap_start_reg );
+    SC_METHOD(thread_grp_sha256_transform_fu_246_ap_start);
+    sensitive << ( grp_sha256_transform_fu_246_ap_start_reg );
 
-    SC_METHOD(thread_i_fu_399_p2);
-    sensitive << ( i_0_reg_263 );
+    SC_METHOD(thread_i_fu_355_p2);
+    sensitive << ( i_0_reg_235 );
 
-    SC_METHOD(thread_icmp_ln101_fu_555_p2);
-    sensitive << ( icmp_ln99_reg_731 );
-    sensitive << ( ap_CS_fsm_state48 );
-    sensitive << ( ctx_bitlen_0_0_fu_118 );
-
-    SC_METHOD(thread_icmp_ln95_fu_394_p2);
-    sensitive << ( empty_reg_710 );
+    SC_METHOD(thread_icmp_ln127_fu_350_p2);
+    sensitive << ( empty_reg_604 );
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( i_0_reg_263 );
+    sensitive << ( i_0_reg_235 );
 
-    SC_METHOD(thread_icmp_ln99_fu_507_p2);
+    SC_METHOD(thread_icmp_ln131_fu_451_p2);
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( add_ln98_fu_501_p2 );
+    sensitive << ( add_ln130_fu_445_p2 );
 
-    SC_METHOD(thread_lshr_ln_fu_480_p4);
-    sensitive << ( ctx_datalen_0_fu_78 );
+    SC_METHOD(thread_lshr_ln_fu_424_p4);
+    sensitive << ( ctx_datalen_0_fu_70 );
 
-    SC_METHOD(thread_select_ln101_fu_567_p3);
-    sensitive << ( ctx_bitlen_1_0_fu_114 );
-    sensitive << ( icmp_ln101_fu_555_p2 );
-    sensitive << ( add_ln101_fu_561_p2 );
+    SC_METHOD(thread_trunc_ln129_fu_420_p1);
+    sensitive << ( ctx_datalen_0_fu_70 );
 
-    SC_METHOD(thread_trunc_ln97_fu_476_p1);
-    sensitive << ( ctx_datalen_0_fu_78 );
+    SC_METHOD(thread_zext_ln129_1_fu_434_p1);
+    sensitive << ( lshr_ln_fu_424_p4 );
 
-    SC_METHOD(thread_zext_ln97_1_fu_490_p1);
-    sensitive << ( lshr_ln_fu_480_p4 );
-
-    SC_METHOD(thread_zext_ln97_fu_405_p1);
-    sensitive << ( i_0_reg_263 );
+    SC_METHOD(thread_zext_ln129_fu_361_p1);
+    sensitive << ( i_0_reg_235 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm );
     sensitive << ( ap_CS_fsm_state1 );
     sensitive << ( ap_CS_fsm_state2 );
-    sensitive << ( icmp_ln95_fu_394_p2 );
-    sensitive << ( icmp_ln99_fu_507_p2 );
+    sensitive << ( icmp_ln127_fu_350_p2 );
+    sensitive << ( icmp_ln131_fu_451_p2 );
     sensitive << ( ap_CS_fsm_state3 );
 
     SC_THREAD(thread_ap_var_for_const0);
 
-    ap_CS_fsm = "000000000000000000000000000000000000000000000001";
-    grp_sha256_transform_fu_274_ap_start_reg = SC_LOGIC_0;
+    ap_CS_fsm = "0000000000000000000000000000000000000000000000001";
+    grp_sha256_transform_fu_246_ap_start_reg = SC_LOGIC_0;
     static int apTFileNum = 0;
     stringstream apTFilenSS;
     apTFilenSS << "sha256_update_sc_trace_" << apTFileNum ++;
@@ -618,8 +591,6 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sc_trace(mVcdFile, p_read6, "(port)p_read6");
     sc_trace(mVcdFile, p_read7, "(port)p_read7");
     sc_trace(mVcdFile, p_read8, "(port)p_read8");
-    sc_trace(mVcdFile, p_read9, "(port)p_read9");
-    sc_trace(mVcdFile, p_read10, "(port)p_read10");
     sc_trace(mVcdFile, data_address0, "(port)data_address0");
     sc_trace(mVcdFile, data_ce0, "(port)data_ce0");
     sc_trace(mVcdFile, data_q0, "(port)data_q0");
@@ -633,53 +604,51 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sc_trace(mVcdFile, ap_return_6, "(port)ap_return_6");
     sc_trace(mVcdFile, ap_return_7, "(port)ap_return_7");
     sc_trace(mVcdFile, ap_return_8, "(port)ap_return_8");
-    sc_trace(mVcdFile, ap_return_9, "(port)ap_return_9");
-    sc_trace(mVcdFile, ap_return_10, "(port)ap_return_10");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
     sc_trace(mVcdFile, ap_CS_fsm_state1, "ap_CS_fsm_state1");
-    sc_trace(mVcdFile, empty_fu_335_p1, "empty_fu_335_p1");
-    sc_trace(mVcdFile, empty_reg_710, "empty_reg_710");
-    sc_trace(mVcdFile, i_fu_399_p2, "i_fu_399_p2");
-    sc_trace(mVcdFile, i_reg_718, "i_reg_718");
+    sc_trace(mVcdFile, empty_fu_301_p1, "empty_fu_301_p1");
+    sc_trace(mVcdFile, empty_reg_604, "empty_reg_604");
+    sc_trace(mVcdFile, i_fu_355_p2, "i_fu_355_p2");
+    sc_trace(mVcdFile, i_reg_612, "i_reg_612");
     sc_trace(mVcdFile, ap_CS_fsm_state2, "ap_CS_fsm_state2");
-    sc_trace(mVcdFile, icmp_ln95_fu_394_p2, "icmp_ln95_fu_394_p2");
-    sc_trace(mVcdFile, icmp_ln99_fu_507_p2, "icmp_ln99_fu_507_p2");
-    sc_trace(mVcdFile, icmp_ln99_reg_731, "icmp_ln99_reg_731");
+    sc_trace(mVcdFile, icmp_ln127_fu_350_p2, "icmp_ln127_fu_350_p2");
+    sc_trace(mVcdFile, icmp_ln131_fu_451_p2, "icmp_ln131_fu_451_p2");
+    sc_trace(mVcdFile, icmp_ln131_reg_625, "icmp_ln131_reg_625");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, ap_CS_fsm_state9, "ap_CS_fsm_state9");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_start, "grp_sha256_transform_fu_274_ap_start");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_done, "grp_sha256_transform_fu_274_ap_done");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_idle, "grp_sha256_transform_fu_274_ap_idle");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_ready, "grp_sha256_transform_fu_274_ap_ready");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_0_address0, "grp_sha256_transform_fu_274_data_0_address0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_0_ce0, "grp_sha256_transform_fu_274_data_0_ce0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_0_address1, "grp_sha256_transform_fu_274_data_0_address1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_0_ce1, "grp_sha256_transform_fu_274_data_0_ce1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_1_address0, "grp_sha256_transform_fu_274_data_1_address0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_1_ce0, "grp_sha256_transform_fu_274_data_1_ce0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_1_address1, "grp_sha256_transform_fu_274_data_1_address1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_1_ce1, "grp_sha256_transform_fu_274_data_1_ce1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_2_address0, "grp_sha256_transform_fu_274_data_2_address0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_2_ce0, "grp_sha256_transform_fu_274_data_2_ce0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_2_address1, "grp_sha256_transform_fu_274_data_2_address1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_2_ce1, "grp_sha256_transform_fu_274_data_2_ce1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_3_address0, "grp_sha256_transform_fu_274_data_3_address0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_3_ce0, "grp_sha256_transform_fu_274_data_3_ce0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_3_address1, "grp_sha256_transform_fu_274_data_3_address1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_data_3_ce1, "grp_sha256_transform_fu_274_data_3_ce1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_0, "grp_sha256_transform_fu_274_ap_return_0");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_1, "grp_sha256_transform_fu_274_ap_return_1");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_2, "grp_sha256_transform_fu_274_ap_return_2");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_3, "grp_sha256_transform_fu_274_ap_return_3");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_4, "grp_sha256_transform_fu_274_ap_return_4");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_5, "grp_sha256_transform_fu_274_ap_return_5");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_6, "grp_sha256_transform_fu_274_ap_return_6");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_return_7, "grp_sha256_transform_fu_274_ap_return_7");
-    sc_trace(mVcdFile, i_0_reg_263, "i_0_reg_263");
-    sc_trace(mVcdFile, ap_CS_fsm_state48, "ap_CS_fsm_state48");
-    sc_trace(mVcdFile, grp_sha256_transform_fu_274_ap_start_reg, "grp_sha256_transform_fu_274_ap_start_reg");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_start, "grp_sha256_transform_fu_246_ap_start");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_done, "grp_sha256_transform_fu_246_ap_done");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_idle, "grp_sha256_transform_fu_246_ap_idle");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_ready, "grp_sha256_transform_fu_246_ap_ready");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_0_address0, "grp_sha256_transform_fu_246_data_0_address0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_0_ce0, "grp_sha256_transform_fu_246_data_0_ce0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_0_address1, "grp_sha256_transform_fu_246_data_0_address1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_0_ce1, "grp_sha256_transform_fu_246_data_0_ce1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_1_address0, "grp_sha256_transform_fu_246_data_1_address0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_1_ce0, "grp_sha256_transform_fu_246_data_1_ce0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_1_address1, "grp_sha256_transform_fu_246_data_1_address1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_1_ce1, "grp_sha256_transform_fu_246_data_1_ce1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_2_address0, "grp_sha256_transform_fu_246_data_2_address0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_2_ce0, "grp_sha256_transform_fu_246_data_2_ce0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_2_address1, "grp_sha256_transform_fu_246_data_2_address1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_2_ce1, "grp_sha256_transform_fu_246_data_2_ce1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_3_address0, "grp_sha256_transform_fu_246_data_3_address0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_3_ce0, "grp_sha256_transform_fu_246_data_3_ce0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_3_address1, "grp_sha256_transform_fu_246_data_3_address1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_data_3_ce1, "grp_sha256_transform_fu_246_data_3_ce1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_0, "grp_sha256_transform_fu_246_ap_return_0");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_1, "grp_sha256_transform_fu_246_ap_return_1");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_2, "grp_sha256_transform_fu_246_ap_return_2");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_3, "grp_sha256_transform_fu_246_ap_return_3");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_4, "grp_sha256_transform_fu_246_ap_return_4");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_5, "grp_sha256_transform_fu_246_ap_return_5");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_6, "grp_sha256_transform_fu_246_ap_return_6");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_return_7, "grp_sha256_transform_fu_246_ap_return_7");
+    sc_trace(mVcdFile, i_0_reg_235, "i_0_reg_235");
+    sc_trace(mVcdFile, ap_CS_fsm_state49, "ap_CS_fsm_state49");
+    sc_trace(mVcdFile, grp_sha256_transform_fu_246_ap_start_reg, "grp_sha256_transform_fu_246_ap_start_reg");
     sc_trace(mVcdFile, ap_CS_fsm_state8, "ap_CS_fsm_state8");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
     sc_trace(mVcdFile, ap_NS_fsm_state9, "ap_NS_fsm_state9");
@@ -691,26 +660,20 @@ sha256_update::sha256_update(sc_module_name name) : sc_module(name), mVcdFile(0)
     sc_trace(mVcdFile, ap_CS_fsm_state15, "ap_CS_fsm_state15");
     sc_trace(mVcdFile, ap_CS_fsm_state16, "ap_CS_fsm_state16");
     sc_trace(mVcdFile, ap_CS_fsm_state17, "ap_CS_fsm_state17");
-    sc_trace(mVcdFile, zext_ln97_fu_405_p1, "zext_ln97_fu_405_p1");
-    sc_trace(mVcdFile, zext_ln97_1_fu_490_p1, "zext_ln97_1_fu_490_p1");
-    sc_trace(mVcdFile, ctx_datalen_0_fu_78, "ctx_datalen_0_fu_78");
-    sc_trace(mVcdFile, add_ln98_fu_501_p2, "add_ln98_fu_501_p2");
-    sc_trace(mVcdFile, ctx_state_7_0_fu_82, "ctx_state_7_0_fu_82");
-    sc_trace(mVcdFile, ctx_state_6_0_fu_86, "ctx_state_6_0_fu_86");
-    sc_trace(mVcdFile, ctx_state_5_0_fu_90, "ctx_state_5_0_fu_90");
-    sc_trace(mVcdFile, ctx_state_4_0_fu_94, "ctx_state_4_0_fu_94");
-    sc_trace(mVcdFile, ctx_state_3_0_fu_98, "ctx_state_3_0_fu_98");
-    sc_trace(mVcdFile, ctx_state_2_0_fu_102, "ctx_state_2_0_fu_102");
-    sc_trace(mVcdFile, ctx_state_1_0_fu_106, "ctx_state_1_0_fu_106");
-    sc_trace(mVcdFile, ctx_state_0_0_fu_110, "ctx_state_0_0_fu_110");
-    sc_trace(mVcdFile, ctx_bitlen_1_0_fu_114, "ctx_bitlen_1_0_fu_114");
-    sc_trace(mVcdFile, select_ln101_fu_567_p3, "select_ln101_fu_567_p3");
-    sc_trace(mVcdFile, ctx_bitlen_0_0_fu_118, "ctx_bitlen_0_0_fu_118");
-    sc_trace(mVcdFile, add_ln101_1_fu_575_p2, "add_ln101_1_fu_575_p2");
-    sc_trace(mVcdFile, trunc_ln97_fu_476_p1, "trunc_ln97_fu_476_p1");
-    sc_trace(mVcdFile, lshr_ln_fu_480_p4, "lshr_ln_fu_480_p4");
-    sc_trace(mVcdFile, icmp_ln101_fu_555_p2, "icmp_ln101_fu_555_p2");
-    sc_trace(mVcdFile, add_ln101_fu_561_p2, "add_ln101_fu_561_p2");
+    sc_trace(mVcdFile, zext_ln129_fu_361_p1, "zext_ln129_fu_361_p1");
+    sc_trace(mVcdFile, zext_ln129_1_fu_434_p1, "zext_ln129_1_fu_434_p1");
+    sc_trace(mVcdFile, ctx_datalen_0_fu_70, "ctx_datalen_0_fu_70");
+    sc_trace(mVcdFile, add_ln130_fu_445_p2, "add_ln130_fu_445_p2");
+    sc_trace(mVcdFile, ctx_state_7_0_fu_74, "ctx_state_7_0_fu_74");
+    sc_trace(mVcdFile, ctx_state_6_0_fu_78, "ctx_state_6_0_fu_78");
+    sc_trace(mVcdFile, ctx_state_5_0_fu_82, "ctx_state_5_0_fu_82");
+    sc_trace(mVcdFile, ctx_state_4_0_fu_86, "ctx_state_4_0_fu_86");
+    sc_trace(mVcdFile, ctx_state_3_0_fu_90, "ctx_state_3_0_fu_90");
+    sc_trace(mVcdFile, ctx_state_2_0_fu_94, "ctx_state_2_0_fu_94");
+    sc_trace(mVcdFile, ctx_state_1_0_fu_98, "ctx_state_1_0_fu_98");
+    sc_trace(mVcdFile, ctx_state_0_0_fu_102, "ctx_state_0_0_fu_102");
+    sc_trace(mVcdFile, trunc_ln129_fu_420_p1, "trunc_ln129_fu_420_p1");
+    sc_trace(mVcdFile, lshr_ln_fu_424_p4, "lshr_ln_fu_424_p4");
 #endif
 
     }
@@ -720,7 +683,7 @@ sha256_update::~sha256_update() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete grp_sha256_transform_fu_274;
+    delete grp_sha256_transform_fu_246;
 }
 
 void sha256_update::thread_ap_var_for_const0() {
@@ -733,123 +696,101 @@ void sha256_update::thread_ap_clk_no_reset_() {
     } else {
         ap_CS_fsm = ap_NS_fsm.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_bitlen_0_0_fu_118 = add_ln101_1_fu_575_p2.read();
-    } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
-                esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_bitlen_0_0_fu_118 = p_read1.read();
-    }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_bitlen_1_0_fu_114 = select_ln101_fu_567_p3.read();
-    } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
-                esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_bitlen_1_0_fu_114 = p_read2.read();
-    }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_fu_507_p2.read(), ap_const_lv1_1))) {
-        ctx_datalen_0_fu_78 = ap_const_lv32_0;
+         esl_seteq<1,1,1>(icmp_ln131_fu_451_p2.read(), ap_const_lv1_1))) {
+        ctx_datalen_0_fu_70 = ap_const_lv32_0;
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-                esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln99_fu_507_p2.read()))) {
-        ctx_datalen_0_fu_78 = add_ln98_fu_501_p2.read();
+                esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln131_fu_451_p2.read()))) {
+        ctx_datalen_0_fu_70 = add_ln130_fu_445_p2.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_datalen_0_fu_78 = ctx_datalen_read.read();
+        ctx_datalen_0_fu_70 = ctx_datalen_read.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_0_0_fu_110 = grp_sha256_transform_fu_274_ap_return_0.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_0_0_fu_102 = grp_sha256_transform_fu_246_ap_return_0.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_0_0_fu_110 = p_read3.read();
+        ctx_state_0_0_fu_102 = p_read1.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_1_0_fu_106 = grp_sha256_transform_fu_274_ap_return_1.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_1_0_fu_98 = grp_sha256_transform_fu_246_ap_return_1.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_1_0_fu_106 = p_read4.read();
+        ctx_state_1_0_fu_98 = p_read2.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_2_0_fu_102 = grp_sha256_transform_fu_274_ap_return_2.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_2_0_fu_94 = grp_sha256_transform_fu_246_ap_return_2.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_2_0_fu_102 = p_read5.read();
+        ctx_state_2_0_fu_94 = p_read3.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_3_0_fu_98 = grp_sha256_transform_fu_274_ap_return_3.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_3_0_fu_90 = grp_sha256_transform_fu_246_ap_return_3.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_3_0_fu_98 = p_read6.read();
+        ctx_state_3_0_fu_90 = p_read4.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_4_0_fu_94 = grp_sha256_transform_fu_274_ap_return_4.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_4_0_fu_86 = grp_sha256_transform_fu_246_ap_return_4.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_4_0_fu_94 = p_read7.read();
+        ctx_state_4_0_fu_86 = p_read5.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_5_0_fu_90 = grp_sha256_transform_fu_274_ap_return_5.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_5_0_fu_82 = grp_sha256_transform_fu_246_ap_return_5.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_5_0_fu_90 = p_read8.read();
+        ctx_state_5_0_fu_82 = p_read6.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_6_0_fu_86 = grp_sha256_transform_fu_274_ap_return_6.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_6_0_fu_78 = grp_sha256_transform_fu_246_ap_return_6.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_6_0_fu_86 = p_read9.read();
+        ctx_state_6_0_fu_78 = p_read7.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read()) && 
-         esl_seteq<1,1,1>(icmp_ln99_reg_731.read(), ap_const_lv1_1))) {
-        ctx_state_7_0_fu_82 = grp_sha256_transform_fu_274_ap_return_7.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read()) && 
+         esl_seteq<1,1,1>(icmp_ln131_reg_625.read(), ap_const_lv1_1))) {
+        ctx_state_7_0_fu_74 = grp_sha256_transform_fu_246_ap_return_7.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        ctx_state_7_0_fu_82 = p_read10.read();
+        ctx_state_7_0_fu_74 = p_read8.read();
     }
     if ( ap_rst.read() == ap_const_logic_1) {
-        grp_sha256_transform_fu_274_ap_start_reg = ap_const_logic_0;
+        grp_sha256_transform_fu_246_ap_start_reg = ap_const_logic_0;
     } else {
         if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state8.read()) && 
              esl_seteq<1,1,1>(ap_const_logic_1, ap_NS_fsm_state9.read()))) {
-            grp_sha256_transform_fu_274_ap_start_reg = ap_const_logic_1;
-        } else if (esl_seteq<1,1,1>(ap_const_logic_1, grp_sha256_transform_fu_274_ap_ready.read())) {
-            grp_sha256_transform_fu_274_ap_start_reg = ap_const_logic_0;
+            grp_sha256_transform_fu_246_ap_start_reg = ap_const_logic_1;
+        } else if (esl_seteq<1,1,1>(ap_const_logic_1, grp_sha256_transform_fu_246_ap_ready.read())) {
+            grp_sha256_transform_fu_246_ap_start_reg = ap_const_logic_0;
         }
     }
-    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state48.read())) {
-        i_0_reg_263 = i_reg_718.read();
+    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state49.read())) {
+        i_0_reg_235 = i_reg_612.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        i_0_reg_263 = ap_const_lv7_0;
+        i_0_reg_235 = ap_const_lv7_0;
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        empty_reg_710 = empty_fu_335_p1.read();
+        empty_reg_604 = empty_fu_301_p1.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        i_reg_718 = i_fu_399_p2.read();
+        i_reg_612 = i_fu_355_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        icmp_ln99_reg_731 = icmp_ln99_fu_507_p2.read();
+        icmp_ln131_reg_625 = icmp_ln131_fu_451_p2.read();
     }
 }
 
-void sha256_update::thread_add_ln101_1_fu_575_p2() {
-    add_ln101_1_fu_575_p2 = (!ctx_bitlen_0_0_fu_118.read().is_01() || !ap_const_lv32_200.is_01())? sc_lv<32>(): (sc_biguint<32>(ctx_bitlen_0_0_fu_118.read()) + sc_biguint<32>(ap_const_lv32_200));
-}
-
-void sha256_update::thread_add_ln101_fu_561_p2() {
-    add_ln101_fu_561_p2 = (!ctx_bitlen_1_0_fu_114.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(ctx_bitlen_1_0_fu_114.read()) + sc_biguint<32>(ap_const_lv32_1));
-}
-
-void sha256_update::thread_add_ln98_fu_501_p2() {
-    add_ln98_fu_501_p2 = (!ctx_datalen_0_fu_78.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(ctx_datalen_0_fu_78.read()) + sc_biguint<32>(ap_const_lv32_1));
+void sha256_update::thread_add_ln130_fu_445_p2() {
+    add_ln130_fu_445_p2 = (!ctx_datalen_0_fu_70.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(ctx_datalen_0_fu_70.read()) + sc_biguint<32>(ap_const_lv32_1));
 }
 
 void sha256_update::thread_ap_CS_fsm_state1() {
@@ -896,8 +837,8 @@ void sha256_update::thread_ap_CS_fsm_state3() {
     ap_CS_fsm_state3 = ap_CS_fsm.read()[2];
 }
 
-void sha256_update::thread_ap_CS_fsm_state48() {
-    ap_CS_fsm_state48 = ap_CS_fsm.read()[47];
+void sha256_update::thread_ap_CS_fsm_state49() {
+    ap_CS_fsm_state49 = ap_CS_fsm.read()[48];
 }
 
 void sha256_update::thread_ap_CS_fsm_state8() {
@@ -916,7 +857,7 @@ void sha256_update::thread_ap_done() {
     if (((esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) && 
           esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
-          esl_seteq<1,1,1>(icmp_ln95_fu_394_p2.read(), ap_const_lv1_1)))) {
+          esl_seteq<1,1,1>(icmp_ln127_fu_350_p2.read(), ap_const_lv1_1)))) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -934,7 +875,7 @@ void sha256_update::thread_ap_idle() {
 
 void sha256_update::thread_ap_ready() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
-         esl_seteq<1,1,1>(icmp_ln95_fu_394_p2.read(), ap_const_lv1_1))) {
+         esl_seteq<1,1,1>(icmp_ln127_fu_350_p2.read(), ap_const_lv1_1))) {
         ap_ready = ap_const_logic_1;
     } else {
         ap_ready = ap_const_logic_0;
@@ -942,52 +883,44 @@ void sha256_update::thread_ap_ready() {
 }
 
 void sha256_update::thread_ap_return_0() {
-    ap_return_0 = ctx_datalen_0_fu_78.read();
+    ap_return_0 = ctx_datalen_0_fu_70.read();
 }
 
 void sha256_update::thread_ap_return_1() {
-    ap_return_1 = ctx_bitlen_0_0_fu_118.read();
-}
-
-void sha256_update::thread_ap_return_10() {
-    ap_return_10 = ctx_state_7_0_fu_82.read();
+    ap_return_1 = ctx_state_0_0_fu_102.read();
 }
 
 void sha256_update::thread_ap_return_2() {
-    ap_return_2 = ctx_bitlen_1_0_fu_114.read();
+    ap_return_2 = ctx_state_1_0_fu_98.read();
 }
 
 void sha256_update::thread_ap_return_3() {
-    ap_return_3 = ctx_state_0_0_fu_110.read();
+    ap_return_3 = ctx_state_2_0_fu_94.read();
 }
 
 void sha256_update::thread_ap_return_4() {
-    ap_return_4 = ctx_state_1_0_fu_106.read();
+    ap_return_4 = ctx_state_3_0_fu_90.read();
 }
 
 void sha256_update::thread_ap_return_5() {
-    ap_return_5 = ctx_state_2_0_fu_102.read();
+    ap_return_5 = ctx_state_4_0_fu_86.read();
 }
 
 void sha256_update::thread_ap_return_6() {
-    ap_return_6 = ctx_state_3_0_fu_98.read();
+    ap_return_6 = ctx_state_5_0_fu_82.read();
 }
 
 void sha256_update::thread_ap_return_7() {
-    ap_return_7 = ctx_state_4_0_fu_94.read();
+    ap_return_7 = ctx_state_6_0_fu_78.read();
 }
 
 void sha256_update::thread_ap_return_8() {
-    ap_return_8 = ctx_state_5_0_fu_90.read();
-}
-
-void sha256_update::thread_ap_return_9() {
-    ap_return_9 = ctx_state_6_0_fu_86.read();
+    ap_return_8 = ctx_state_7_0_fu_74.read();
 }
 
 void sha256_update::thread_ctx_data_0_address0() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        ctx_data_0_address0 =  (sc_lv<4>) (zext_ln97_1_fu_490_p1.read());
+        ctx_data_0_address0 =  (sc_lv<4>) (zext_ln129_1_fu_434_p1.read());
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state9.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state10.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state11.read()) || 
@@ -997,14 +930,14 @@ void sha256_update::thread_ctx_data_0_address0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_0_address0 = grp_sha256_transform_fu_274_data_0_address0.read();
+        ctx_data_0_address0 = grp_sha256_transform_fu_246_data_0_address0.read();
     } else {
         ctx_data_0_address0 = "XXXX";
     }
 }
 
 void sha256_update::thread_ctx_data_0_address1() {
-    ctx_data_0_address1 = grp_sha256_transform_fu_274_data_0_address1.read();
+    ctx_data_0_address1 = grp_sha256_transform_fu_246_data_0_address1.read();
 }
 
 void sha256_update::thread_ctx_data_0_ce0() {
@@ -1019,7 +952,7 @@ void sha256_update::thread_ctx_data_0_ce0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_0_ce0 = grp_sha256_transform_fu_274_data_0_ce0.read();
+        ctx_data_0_ce0 = grp_sha256_transform_fu_246_data_0_ce0.read();
     } else {
         ctx_data_0_ce0 = ap_const_logic_0;
     }
@@ -1035,7 +968,7 @@ void sha256_update::thread_ctx_data_0_ce1() {
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_0_ce1 = grp_sha256_transform_fu_274_data_0_ce1.read();
+        ctx_data_0_ce1 = grp_sha256_transform_fu_246_data_0_ce1.read();
     } else {
         ctx_data_0_ce1 = ap_const_logic_0;
     }
@@ -1047,7 +980,7 @@ void sha256_update::thread_ctx_data_0_d0() {
 
 void sha256_update::thread_ctx_data_0_we0() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,2,2>(trunc_ln97_fu_476_p1.read(), ap_const_lv2_0))) {
+         esl_seteq<1,2,2>(trunc_ln129_fu_420_p1.read(), ap_const_lv2_0))) {
         ctx_data_0_we0 = ap_const_logic_1;
     } else {
         ctx_data_0_we0 = ap_const_logic_0;
@@ -1056,7 +989,7 @@ void sha256_update::thread_ctx_data_0_we0() {
 
 void sha256_update::thread_ctx_data_1_address0() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        ctx_data_1_address0 =  (sc_lv<4>) (zext_ln97_1_fu_490_p1.read());
+        ctx_data_1_address0 =  (sc_lv<4>) (zext_ln129_1_fu_434_p1.read());
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state9.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state10.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state11.read()) || 
@@ -1066,14 +999,14 @@ void sha256_update::thread_ctx_data_1_address0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_1_address0 = grp_sha256_transform_fu_274_data_1_address0.read();
+        ctx_data_1_address0 = grp_sha256_transform_fu_246_data_1_address0.read();
     } else {
         ctx_data_1_address0 = "XXXX";
     }
 }
 
 void sha256_update::thread_ctx_data_1_address1() {
-    ctx_data_1_address1 = grp_sha256_transform_fu_274_data_1_address1.read();
+    ctx_data_1_address1 = grp_sha256_transform_fu_246_data_1_address1.read();
 }
 
 void sha256_update::thread_ctx_data_1_ce0() {
@@ -1088,7 +1021,7 @@ void sha256_update::thread_ctx_data_1_ce0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_1_ce0 = grp_sha256_transform_fu_274_data_1_ce0.read();
+        ctx_data_1_ce0 = grp_sha256_transform_fu_246_data_1_ce0.read();
     } else {
         ctx_data_1_ce0 = ap_const_logic_0;
     }
@@ -1104,7 +1037,7 @@ void sha256_update::thread_ctx_data_1_ce1() {
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_1_ce1 = grp_sha256_transform_fu_274_data_1_ce1.read();
+        ctx_data_1_ce1 = grp_sha256_transform_fu_246_data_1_ce1.read();
     } else {
         ctx_data_1_ce1 = ap_const_logic_0;
     }
@@ -1116,7 +1049,7 @@ void sha256_update::thread_ctx_data_1_d0() {
 
 void sha256_update::thread_ctx_data_1_we0() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,2,2>(trunc_ln97_fu_476_p1.read(), ap_const_lv2_1))) {
+         esl_seteq<1,2,2>(trunc_ln129_fu_420_p1.read(), ap_const_lv2_1))) {
         ctx_data_1_we0 = ap_const_logic_1;
     } else {
         ctx_data_1_we0 = ap_const_logic_0;
@@ -1125,7 +1058,7 @@ void sha256_update::thread_ctx_data_1_we0() {
 
 void sha256_update::thread_ctx_data_2_address0() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        ctx_data_2_address0 =  (sc_lv<4>) (zext_ln97_1_fu_490_p1.read());
+        ctx_data_2_address0 =  (sc_lv<4>) (zext_ln129_1_fu_434_p1.read());
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state9.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state10.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state11.read()) || 
@@ -1135,14 +1068,14 @@ void sha256_update::thread_ctx_data_2_address0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_2_address0 = grp_sha256_transform_fu_274_data_2_address0.read();
+        ctx_data_2_address0 = grp_sha256_transform_fu_246_data_2_address0.read();
     } else {
         ctx_data_2_address0 = "XXXX";
     }
 }
 
 void sha256_update::thread_ctx_data_2_address1() {
-    ctx_data_2_address1 = grp_sha256_transform_fu_274_data_2_address1.read();
+    ctx_data_2_address1 = grp_sha256_transform_fu_246_data_2_address1.read();
 }
 
 void sha256_update::thread_ctx_data_2_ce0() {
@@ -1157,7 +1090,7 @@ void sha256_update::thread_ctx_data_2_ce0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_2_ce0 = grp_sha256_transform_fu_274_data_2_ce0.read();
+        ctx_data_2_ce0 = grp_sha256_transform_fu_246_data_2_ce0.read();
     } else {
         ctx_data_2_ce0 = ap_const_logic_0;
     }
@@ -1173,7 +1106,7 @@ void sha256_update::thread_ctx_data_2_ce1() {
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_2_ce1 = grp_sha256_transform_fu_274_data_2_ce1.read();
+        ctx_data_2_ce1 = grp_sha256_transform_fu_246_data_2_ce1.read();
     } else {
         ctx_data_2_ce1 = ap_const_logic_0;
     }
@@ -1185,7 +1118,7 @@ void sha256_update::thread_ctx_data_2_d0() {
 
 void sha256_update::thread_ctx_data_2_we0() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,2,2>(trunc_ln97_fu_476_p1.read(), ap_const_lv2_2))) {
+         esl_seteq<1,2,2>(trunc_ln129_fu_420_p1.read(), ap_const_lv2_2))) {
         ctx_data_2_we0 = ap_const_logic_1;
     } else {
         ctx_data_2_we0 = ap_const_logic_0;
@@ -1194,7 +1127,7 @@ void sha256_update::thread_ctx_data_2_we0() {
 
 void sha256_update::thread_ctx_data_3_address0() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
-        ctx_data_3_address0 =  (sc_lv<4>) (zext_ln97_1_fu_490_p1.read());
+        ctx_data_3_address0 =  (sc_lv<4>) (zext_ln129_1_fu_434_p1.read());
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state9.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state10.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state11.read()) || 
@@ -1204,14 +1137,14 @@ void sha256_update::thread_ctx_data_3_address0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_3_address0 = grp_sha256_transform_fu_274_data_3_address0.read();
+        ctx_data_3_address0 = grp_sha256_transform_fu_246_data_3_address0.read();
     } else {
         ctx_data_3_address0 = "XXXX";
     }
 }
 
 void sha256_update::thread_ctx_data_3_address1() {
-    ctx_data_3_address1 = grp_sha256_transform_fu_274_data_3_address1.read();
+    ctx_data_3_address1 = grp_sha256_transform_fu_246_data_3_address1.read();
 }
 
 void sha256_update::thread_ctx_data_3_ce0() {
@@ -1226,7 +1159,7 @@ void sha256_update::thread_ctx_data_3_ce0() {
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
                 esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_3_ce0 = grp_sha256_transform_fu_274_data_3_ce0.read();
+        ctx_data_3_ce0 = grp_sha256_transform_fu_246_data_3_ce0.read();
     } else {
         ctx_data_3_ce0 = ap_const_logic_0;
     }
@@ -1242,7 +1175,7 @@ void sha256_update::thread_ctx_data_3_ce1() {
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state15.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state16.read()) || 
          esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state17.read()))) {
-        ctx_data_3_ce1 = grp_sha256_transform_fu_274_data_3_ce1.read();
+        ctx_data_3_ce1 = grp_sha256_transform_fu_246_data_3_ce1.read();
     } else {
         ctx_data_3_ce1 = ap_const_logic_0;
     }
@@ -1254,7 +1187,7 @@ void sha256_update::thread_ctx_data_3_d0() {
 
 void sha256_update::thread_ctx_data_3_we0() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,2,2>(trunc_ln97_fu_476_p1.read(), ap_const_lv2_3))) {
+         esl_seteq<1,2,2>(trunc_ln129_fu_420_p1.read(), ap_const_lv2_3))) {
         ctx_data_3_we0 = ap_const_logic_1;
     } else {
         ctx_data_3_we0 = ap_const_logic_0;
@@ -1262,7 +1195,7 @@ void sha256_update::thread_ctx_data_3_we0() {
 }
 
 void sha256_update::thread_data_address0() {
-    data_address0 =  (sc_lv<6>) (zext_ln97_fu_405_p1.read());
+    data_address0 =  (sc_lv<6>) (zext_ln129_fu_361_p1.read());
 }
 
 void sha256_update::thread_data_ce0() {
@@ -1273,48 +1206,40 @@ void sha256_update::thread_data_ce0() {
     }
 }
 
-void sha256_update::thread_empty_fu_335_p1() {
-    empty_fu_335_p1 = len.read().range(7-1, 0);
+void sha256_update::thread_empty_fu_301_p1() {
+    empty_fu_301_p1 = len.read().range(7-1, 0);
 }
 
-void sha256_update::thread_grp_sha256_transform_fu_274_ap_start() {
-    grp_sha256_transform_fu_274_ap_start = grp_sha256_transform_fu_274_ap_start_reg.read();
+void sha256_update::thread_grp_sha256_transform_fu_246_ap_start() {
+    grp_sha256_transform_fu_246_ap_start = grp_sha256_transform_fu_246_ap_start_reg.read();
 }
 
-void sha256_update::thread_i_fu_399_p2() {
-    i_fu_399_p2 = (!i_0_reg_263.read().is_01() || !ap_const_lv7_1.is_01())? sc_lv<7>(): (sc_biguint<7>(i_0_reg_263.read()) + sc_biguint<7>(ap_const_lv7_1));
+void sha256_update::thread_i_fu_355_p2() {
+    i_fu_355_p2 = (!i_0_reg_235.read().is_01() || !ap_const_lv7_1.is_01())? sc_lv<7>(): (sc_biguint<7>(i_0_reg_235.read()) + sc_biguint<7>(ap_const_lv7_1));
 }
 
-void sha256_update::thread_icmp_ln101_fu_555_p2() {
-    icmp_ln101_fu_555_p2 = (!ctx_bitlen_0_0_fu_118.read().is_01() || !ap_const_lv32_FFFFFDFF.is_01())? sc_lv<1>(): (sc_biguint<32>(ctx_bitlen_0_0_fu_118.read()) > sc_biguint<32>(ap_const_lv32_FFFFFDFF));
+void sha256_update::thread_icmp_ln127_fu_350_p2() {
+    icmp_ln127_fu_350_p2 = (!i_0_reg_235.read().is_01() || !empty_reg_604.read().is_01())? sc_lv<1>(): sc_lv<1>(i_0_reg_235.read() == empty_reg_604.read());
 }
 
-void sha256_update::thread_icmp_ln95_fu_394_p2() {
-    icmp_ln95_fu_394_p2 = (!i_0_reg_263.read().is_01() || !empty_reg_710.read().is_01())? sc_lv<1>(): sc_lv<1>(i_0_reg_263.read() == empty_reg_710.read());
+void sha256_update::thread_icmp_ln131_fu_451_p2() {
+    icmp_ln131_fu_451_p2 = (!add_ln130_fu_445_p2.read().is_01() || !ap_const_lv32_40.is_01())? sc_lv<1>(): sc_lv<1>(add_ln130_fu_445_p2.read() == ap_const_lv32_40);
 }
 
-void sha256_update::thread_icmp_ln99_fu_507_p2() {
-    icmp_ln99_fu_507_p2 = (!add_ln98_fu_501_p2.read().is_01() || !ap_const_lv32_40.is_01())? sc_lv<1>(): sc_lv<1>(add_ln98_fu_501_p2.read() == ap_const_lv32_40);
+void sha256_update::thread_lshr_ln_fu_424_p4() {
+    lshr_ln_fu_424_p4 = ctx_datalen_0_fu_70.read().range(31, 2);
 }
 
-void sha256_update::thread_lshr_ln_fu_480_p4() {
-    lshr_ln_fu_480_p4 = ctx_datalen_0_fu_78.read().range(31, 2);
+void sha256_update::thread_trunc_ln129_fu_420_p1() {
+    trunc_ln129_fu_420_p1 = ctx_datalen_0_fu_70.read().range(2-1, 0);
 }
 
-void sha256_update::thread_select_ln101_fu_567_p3() {
-    select_ln101_fu_567_p3 = (!icmp_ln101_fu_555_p2.read()[0].is_01())? sc_lv<32>(): ((icmp_ln101_fu_555_p2.read()[0].to_bool())? add_ln101_fu_561_p2.read(): ctx_bitlen_1_0_fu_114.read());
+void sha256_update::thread_zext_ln129_1_fu_434_p1() {
+    zext_ln129_1_fu_434_p1 = esl_zext<64,30>(lshr_ln_fu_424_p4.read());
 }
 
-void sha256_update::thread_trunc_ln97_fu_476_p1() {
-    trunc_ln97_fu_476_p1 = ctx_datalen_0_fu_78.read().range(2-1, 0);
-}
-
-void sha256_update::thread_zext_ln97_1_fu_490_p1() {
-    zext_ln97_1_fu_490_p1 = esl_zext<64,30>(lshr_ln_fu_480_p4.read());
-}
-
-void sha256_update::thread_zext_ln97_fu_405_p1() {
-    zext_ln97_fu_405_p1 = esl_zext<64,7>(i_0_reg_263.read());
+void sha256_update::thread_zext_ln129_fu_361_p1() {
+    zext_ln129_fu_361_p1 = esl_zext<64,7>(i_0_reg_235.read());
 }
 
 void sha256_update::thread_ap_NS_fsm() {
@@ -1327,15 +1252,15 @@ void sha256_update::thread_ap_NS_fsm() {
             }
             break;
         case 2 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(icmp_ln95_fu_394_p2.read(), ap_const_lv1_1))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(icmp_ln127_fu_350_p2.read(), ap_const_lv1_1))) {
                 ap_NS_fsm = ap_ST_fsm_state1;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state3;
             }
             break;
         case 4 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln99_fu_507_p2.read()))) {
-                ap_NS_fsm = ap_ST_fsm_state48;
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, icmp_ln131_fu_451_p2.read()))) {
+                ap_NS_fsm = ap_ST_fsm_state49;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state4;
             }
@@ -1473,10 +1398,13 @@ void sha256_update::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_fsm_state48;
             break;
         case 140737488355328 : 
+            ap_NS_fsm = ap_ST_fsm_state49;
+            break;
+        case 281474976710656 : 
             ap_NS_fsm = ap_ST_fsm_state2;
             break;
         default : 
-            ap_NS_fsm =  (sc_lv<48>) ("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            ap_NS_fsm =  (sc_lv<49>) ("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
             break;
     }
 }

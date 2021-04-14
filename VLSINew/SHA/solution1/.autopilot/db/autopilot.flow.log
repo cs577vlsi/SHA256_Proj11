@@ -710,3 +710,212 @@ Command     autosyn done; 3.115 sec.
 Command   csynth_design done; 11.082 sec.
 Command ap_source done; 11.838 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace D:/VLSINew/SHA/solution1 opened at Wed Apr 14 11:37:26 +0530 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.104 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.162 sec.
+Command     ap_source done; 0.166 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 0.697 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.803 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.156 sec.
+Execute   cosim_design -trace_level all 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/VLSINew/SHA/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.rtl_wrap.cfg.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     is_encrypted D:/VLSINew/SHA_new/SHA_new/sha256_tb.c 
+Execute     is_encrypted D:/VLSINew/SHA_new/SHA_new/sha256_impl.c 
+Execute     is_encrypted D:/VLSINew/SHA_new/SHA_new/sha256.c 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: TB processing: D:/VLSINew/SHA_new/SHA_new/sha256_tb.c D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_tb.c_pre.c
+Execute     tidy_31 xilinx-tb-xfmat D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_tb.c_pre.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_tb.c_pre.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     tidy_31 xilinx-tb31-process D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_tb.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_tb.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: TB processing: D:/VLSINew/SHA_new/SHA_new/sha256_impl.c D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_impl.c_pre.c
+Execute     tidy_31 xilinx-tb-xfmat D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_impl.c_pre.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_impl.c_pre.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     tidy_31 xilinx-tb31-process D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_impl.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256_impl.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: TB processing: D:/VLSINew/SHA_new/SHA_new/sha256.c D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256.c_pre.c
+Execute     tidy_31 xilinx-tb-xfmat D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256.c_pre.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256.c_pre.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     tidy_31 xilinx-tb31-process D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors D:/VLSINew/SHA/solution1/./sim/autowrap/testbench/sha256.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.rtl_wrap.cfg.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.rtl_wrap.cfg.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.rtl_wrap.cfg.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.rtl_wrap.cfg.tcl 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.492 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.rtl_wrap.cfg.tcl 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+Execute     source D:/VLSINew/SHA/solution1/.autopilot/db/sha256.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '4'.
+Command     ap_source done; error code: 1; 19.762 sec.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+Command   cosim_design done; error code: 2; 41.593 sec.
+Command ap_source done; error code: 1; 42.772 sec.
+Execute cleanup_all 

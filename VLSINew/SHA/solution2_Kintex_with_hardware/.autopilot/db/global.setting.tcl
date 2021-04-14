@@ -40,7 +40,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcku025:-ffva1156:-1-c
-set SourceFiles {sc {} c {../../SHA_new/SHA_new/sha256_impl.c ../../SHA_new/SHA_new/sha256.c}}
+set SourceFiles {sc {} c {../../SHA_new/SHA_new/sha256.c ../../SHA_new/SHA_new/sha256_impl.c}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile D:/VLSINew/SHA/solution2_Kintex_with_hardware/solution2_Kintex_with_hardware.directive
 set TBFiles {verilog ../../SHA_new/SHA_new/sha256_tb.c bc ../../SHA_new/SHA_new/sha256_tb.c vhdl ../../SHA_new/SHA_new/sha256_tb.c sc ../../SHA_new/SHA_new/sha256_tb.c cas ../../SHA_new/SHA_new/sha256_tb.c c {}}

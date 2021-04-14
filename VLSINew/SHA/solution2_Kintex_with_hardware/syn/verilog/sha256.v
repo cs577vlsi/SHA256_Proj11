@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="sha256,hls_ip_2019_1,{HLS_INPUT_TYPE=c,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcku025-ffva1156-1-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.750000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=33600,HLS_SYN_LUT=97687,HLS_VERSION=2019_1}" *)
+(* CORE_GENERATION_INFO="sha256,hls_ip_2019_1,{HLS_INPUT_TYPE=c,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcku025-ffva1156-1-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.750000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=9,HLS_SYN_DSP=0,HLS_SYN_FF=25156,HLS_SYN_LUT=50808,HLS_VERSION=2019_1}" *)
 
 module sha256 (
         ap_clk,
@@ -85,51 +85,47 @@ wire   [31:0] bytes;
 wire   [4:0] digest_address0;
 reg    digest_ce0;
 reg    digest_we0;
-reg   [31:0] reg_486;
+reg   [31:0] reg_448;
 wire    ap_CS_fsm_state2;
-wire   [0:0] icmp_ln33_fu_624_p2;
+wire   [0:0] icmp_ln33_fu_564_p2;
 wire    ap_CS_fsm_state3;
-wire   [0:0] icmp_ln38_fu_650_p2;
-reg   [31:0] reg_492;
-reg   [31:0] reg_498;
-reg   [31:0] reg_504;
-reg   [31:0] reg_510;
-reg   [31:0] reg_516;
-reg   [31:0] reg_522;
-reg   [31:0] reg_528;
-reg   [31:0] reg_534;
-reg   [31:0] reg_540;
-reg   [31:0] reg_546;
-wire   [9:0] trunc_ln33_fu_552_p1;
-reg   [9:0] trunc_ln33_reg_860;
-reg   [31:0] n_0_load_reg_866;
-wire   [0:0] icmp_ln36_fu_640_p2;
-reg   [0:0] icmp_ln36_reg_876;
-wire   [9:0] trunc_ln36_fu_646_p1;
-reg   [9:0] trunc_ln36_reg_880;
-wire   [6:0] i_4_fu_656_p2;
-reg   [6:0] i_4_reg_889;
-wire   [5:0] i_3_fu_716_p2;
-reg   [5:0] i_3_reg_902;
+wire   [0:0] icmp_ln38_fu_590_p2;
+reg   [31:0] reg_454;
+reg   [31:0] reg_460;
+reg   [31:0] reg_466;
+reg   [31:0] reg_472;
+reg   [31:0] reg_478;
+reg   [31:0] reg_484;
+reg   [31:0] reg_490;
+reg   [31:0] reg_496;
+wire   [9:0] trunc_ln33_fu_502_p1;
+reg   [9:0] trunc_ln33_reg_786;
+reg   [31:0] n_0_load_reg_792;
+wire   [0:0] icmp_ln36_fu_580_p2;
+reg   [0:0] icmp_ln36_reg_802;
+wire   [9:0] trunc_ln36_fu_586_p1;
+reg   [9:0] trunc_ln36_reg_806;
+wire   [6:0] i_4_fu_596_p2;
+reg   [6:0] i_4_reg_815;
+wire   [5:0] i_3_fu_656_p2;
+reg   [5:0] i_3_reg_828;
 wire    ap_CS_fsm_state6;
-wire   [0:0] icmp_ln46_fu_711_p2;
-reg   [31:0] sha256ctx_datalen_1_1_reg_912;
-reg   [31:0] sha256ctx_bitlen_0_1_reg_917;
-reg   [31:0] sha256ctx_bitlen_1_1_reg_922;
-reg   [31:0] sha256ctx_state_0_2_2_reg_927;
-reg   [31:0] sha256ctx_state_1_2_2_reg_932;
-reg   [31:0] sha256ctx_state_2_2_2_reg_937;
-reg   [31:0] sha256ctx_state_3_2_2_reg_942;
-reg   [31:0] sha256ctx_state_4_2_2_reg_947;
-reg   [31:0] sha256ctx_state_5_2_2_reg_952;
-reg   [31:0] sha256ctx_state_6_2_2_reg_957;
-reg   [31:0] sha256ctx_state_7_2_2_reg_962;
-wire   [5:0] i_fu_757_p2;
-reg   [5:0] i_reg_970;
+wire   [0:0] icmp_ln46_fu_651_p2;
+reg   [31:0] sha256ctx_datalen_1_1_reg_838;
+reg   [31:0] sha256ctx_state_7_2_2_reg_843;
+reg   [31:0] sha256ctx_state_6_2_2_reg_848;
+reg   [31:0] sha256ctx_state_0_2_2_reg_853;
+reg   [31:0] sha256ctx_state_1_2_2_reg_858;
+reg   [31:0] sha256ctx_state_2_2_2_reg_863;
+reg   [31:0] sha256ctx_state_3_2_2_reg_868;
+reg   [31:0] sha256ctx_state_4_2_2_reg_873;
+reg   [31:0] sha256ctx_state_5_2_2_reg_878;
+wire   [5:0] i_fu_697_p2;
+reg   [5:0] i_reg_886;
 wire    ap_CS_fsm_state9;
-wire   [63:0] zext_ln59_fu_763_p1;
-reg   [63:0] zext_ln59_reg_975;
-wire   [0:0] icmp_ln57_fu_751_p2;
+wire   [63:0] zext_ln59_fu_703_p1;
+reg   [63:0] zext_ln59_reg_891;
+wire   [0:0] icmp_ln57_fu_691_p2;
 reg   [5:0] seg_buf_address0;
 reg    seg_buf_ce0;
 reg    seg_buf_we0;
@@ -173,148 +169,142 @@ reg   [3:0] sha256ctx_data_3_address1;
 reg    sha256ctx_data_3_ce1;
 reg    sha256ctx_data_3_we1;
 wire   [7:0] sha256ctx_data_3_q1;
-wire    grp_sha256_final_fu_287_ap_start;
-wire    grp_sha256_final_fu_287_ap_done;
-wire    grp_sha256_final_fu_287_ap_idle;
-wire    grp_sha256_final_fu_287_ap_ready;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_0_address0;
-wire    grp_sha256_final_fu_287_ctx_data_0_ce0;
-wire    grp_sha256_final_fu_287_ctx_data_0_we0;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_0_d0;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_0_address1;
-wire    grp_sha256_final_fu_287_ctx_data_0_ce1;
-wire    grp_sha256_final_fu_287_ctx_data_0_we1;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_0_d1;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_1_address0;
-wire    grp_sha256_final_fu_287_ctx_data_1_ce0;
-wire    grp_sha256_final_fu_287_ctx_data_1_we0;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_1_d0;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_1_address1;
-wire    grp_sha256_final_fu_287_ctx_data_1_ce1;
-wire    grp_sha256_final_fu_287_ctx_data_1_we1;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_1_d1;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_2_address0;
-wire    grp_sha256_final_fu_287_ctx_data_2_ce0;
-wire    grp_sha256_final_fu_287_ctx_data_2_we0;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_2_d0;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_2_address1;
-wire    grp_sha256_final_fu_287_ctx_data_2_ce1;
-wire    grp_sha256_final_fu_287_ctx_data_2_we1;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_2_d1;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_3_address0;
-wire    grp_sha256_final_fu_287_ctx_data_3_ce0;
-wire    grp_sha256_final_fu_287_ctx_data_3_we0;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_3_d0;
-wire   [3:0] grp_sha256_final_fu_287_ctx_data_3_address1;
-wire    grp_sha256_final_fu_287_ctx_data_3_ce1;
-wire    grp_sha256_final_fu_287_ctx_data_3_we1;
-wire   [7:0] grp_sha256_final_fu_287_ctx_data_3_d1;
-wire   [5:0] grp_sha256_final_fu_287_hash_address0;
-wire    grp_sha256_final_fu_287_hash_ce0;
-wire    grp_sha256_final_fu_287_hash_we0;
-wire   [7:0] grp_sha256_final_fu_287_hash_d0;
-wire   [5:0] grp_sha256_final_fu_287_hash_address1;
-wire    grp_sha256_final_fu_287_hash_ce1;
-wire    grp_sha256_final_fu_287_hash_we1;
-wire   [7:0] grp_sha256_final_fu_287_hash_d1;
-wire    grp_sha256_update_fu_307_ap_start;
-wire    grp_sha256_update_fu_307_ap_done;
-wire    grp_sha256_update_fu_307_ap_idle;
-wire    grp_sha256_update_fu_307_ap_ready;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_0_address0;
-wire    grp_sha256_update_fu_307_ctx_data_0_ce0;
-wire    grp_sha256_update_fu_307_ctx_data_0_we0;
-wire   [7:0] grp_sha256_update_fu_307_ctx_data_0_d0;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_0_address1;
-wire    grp_sha256_update_fu_307_ctx_data_0_ce1;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_1_address0;
-wire    grp_sha256_update_fu_307_ctx_data_1_ce0;
-wire    grp_sha256_update_fu_307_ctx_data_1_we0;
-wire   [7:0] grp_sha256_update_fu_307_ctx_data_1_d0;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_1_address1;
-wire    grp_sha256_update_fu_307_ctx_data_1_ce1;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_2_address0;
-wire    grp_sha256_update_fu_307_ctx_data_2_ce0;
-wire    grp_sha256_update_fu_307_ctx_data_2_we0;
-wire   [7:0] grp_sha256_update_fu_307_ctx_data_2_d0;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_2_address1;
-wire    grp_sha256_update_fu_307_ctx_data_2_ce1;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_3_address0;
-wire    grp_sha256_update_fu_307_ctx_data_3_ce0;
-wire    grp_sha256_update_fu_307_ctx_data_3_we0;
-wire   [7:0] grp_sha256_update_fu_307_ctx_data_3_d0;
-wire   [3:0] grp_sha256_update_fu_307_ctx_data_3_address1;
-wire    grp_sha256_update_fu_307_ctx_data_3_ce1;
-reg   [31:0] grp_sha256_update_fu_307_ctx_datalen_read;
-reg   [31:0] grp_sha256_update_fu_307_p_read1;
-reg   [31:0] grp_sha256_update_fu_307_p_read2;
-reg   [31:0] grp_sha256_update_fu_307_p_read3;
-reg   [31:0] grp_sha256_update_fu_307_p_read4;
-reg   [31:0] grp_sha256_update_fu_307_p_read5;
-reg   [31:0] grp_sha256_update_fu_307_p_read6;
-reg   [31:0] grp_sha256_update_fu_307_p_read7;
-reg   [31:0] grp_sha256_update_fu_307_p_read8;
-reg   [31:0] grp_sha256_update_fu_307_p_read9;
-reg   [31:0] grp_sha256_update_fu_307_p_read10;
-wire   [5:0] grp_sha256_update_fu_307_data_address0;
-wire    grp_sha256_update_fu_307_data_ce0;
-reg   [31:0] grp_sha256_update_fu_307_len;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_0;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_1;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_2;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_3;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_4;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_5;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_6;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_7;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_8;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_9;
-wire   [31:0] grp_sha256_update_fu_307_ap_return_10;
-reg   [6:0] i_0_reg_252;
+wire    grp_sha256_final_fu_281_ap_start;
+wire    grp_sha256_final_fu_281_ap_done;
+wire    grp_sha256_final_fu_281_ap_idle;
+wire    grp_sha256_final_fu_281_ap_ready;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_0_address0;
+wire    grp_sha256_final_fu_281_ctx_data_0_ce0;
+wire    grp_sha256_final_fu_281_ctx_data_0_we0;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_0_d0;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_0_address1;
+wire    grp_sha256_final_fu_281_ctx_data_0_ce1;
+wire    grp_sha256_final_fu_281_ctx_data_0_we1;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_0_d1;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_1_address0;
+wire    grp_sha256_final_fu_281_ctx_data_1_ce0;
+wire    grp_sha256_final_fu_281_ctx_data_1_we0;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_1_d0;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_1_address1;
+wire    grp_sha256_final_fu_281_ctx_data_1_ce1;
+wire    grp_sha256_final_fu_281_ctx_data_1_we1;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_1_d1;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_2_address0;
+wire    grp_sha256_final_fu_281_ctx_data_2_ce0;
+wire    grp_sha256_final_fu_281_ctx_data_2_we0;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_2_d0;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_2_address1;
+wire    grp_sha256_final_fu_281_ctx_data_2_ce1;
+wire    grp_sha256_final_fu_281_ctx_data_2_we1;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_2_d1;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_3_address0;
+wire    grp_sha256_final_fu_281_ctx_data_3_ce0;
+wire    grp_sha256_final_fu_281_ctx_data_3_we0;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_3_d0;
+wire   [3:0] grp_sha256_final_fu_281_ctx_data_3_address1;
+wire    grp_sha256_final_fu_281_ctx_data_3_ce1;
+wire    grp_sha256_final_fu_281_ctx_data_3_we1;
+wire   [7:0] grp_sha256_final_fu_281_ctx_data_3_d1;
+wire   [5:0] grp_sha256_final_fu_281_hash_address0;
+wire    grp_sha256_final_fu_281_hash_ce0;
+wire    grp_sha256_final_fu_281_hash_we0;
+wire   [7:0] grp_sha256_final_fu_281_hash_d0;
+wire   [5:0] grp_sha256_final_fu_281_hash_address1;
+wire    grp_sha256_final_fu_281_hash_ce1;
+wire    grp_sha256_final_fu_281_hash_we1;
+wire   [7:0] grp_sha256_final_fu_281_hash_d1;
+wire    grp_sha256_update_fu_299_ap_start;
+wire    grp_sha256_update_fu_299_ap_done;
+wire    grp_sha256_update_fu_299_ap_idle;
+wire    grp_sha256_update_fu_299_ap_ready;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_0_address0;
+wire    grp_sha256_update_fu_299_ctx_data_0_ce0;
+wire    grp_sha256_update_fu_299_ctx_data_0_we0;
+wire   [7:0] grp_sha256_update_fu_299_ctx_data_0_d0;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_0_address1;
+wire    grp_sha256_update_fu_299_ctx_data_0_ce1;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_1_address0;
+wire    grp_sha256_update_fu_299_ctx_data_1_ce0;
+wire    grp_sha256_update_fu_299_ctx_data_1_we0;
+wire   [7:0] grp_sha256_update_fu_299_ctx_data_1_d0;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_1_address1;
+wire    grp_sha256_update_fu_299_ctx_data_1_ce1;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_2_address0;
+wire    grp_sha256_update_fu_299_ctx_data_2_ce0;
+wire    grp_sha256_update_fu_299_ctx_data_2_we0;
+wire   [7:0] grp_sha256_update_fu_299_ctx_data_2_d0;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_2_address1;
+wire    grp_sha256_update_fu_299_ctx_data_2_ce1;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_3_address0;
+wire    grp_sha256_update_fu_299_ctx_data_3_ce0;
+wire    grp_sha256_update_fu_299_ctx_data_3_we0;
+wire   [7:0] grp_sha256_update_fu_299_ctx_data_3_d0;
+wire   [3:0] grp_sha256_update_fu_299_ctx_data_3_address1;
+wire    grp_sha256_update_fu_299_ctx_data_3_ce1;
+reg   [31:0] grp_sha256_update_fu_299_ctx_datalen_read;
+reg   [31:0] grp_sha256_update_fu_299_p_read1;
+reg   [31:0] grp_sha256_update_fu_299_p_read2;
+reg   [31:0] grp_sha256_update_fu_299_p_read3;
+reg   [31:0] grp_sha256_update_fu_299_p_read4;
+reg   [31:0] grp_sha256_update_fu_299_p_read5;
+reg   [31:0] grp_sha256_update_fu_299_p_read6;
+reg   [31:0] grp_sha256_update_fu_299_p_read7;
+reg   [31:0] grp_sha256_update_fu_299_p_read8;
+wire   [5:0] grp_sha256_update_fu_299_data_address0;
+wire    grp_sha256_update_fu_299_data_ce0;
+reg   [31:0] grp_sha256_update_fu_299_len;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_0;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_1;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_2;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_3;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_4;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_5;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_6;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_7;
+wire   [31:0] grp_sha256_update_fu_299_ap_return_8;
+reg   [6:0] i_0_reg_246;
 wire    ap_CS_fsm_state4;
-reg   [5:0] i_1_reg_264;
+reg   [5:0] i_1_reg_258;
 wire    ap_CS_fsm_state7;
-reg   [5:0] i_2_reg_276;
+reg   [5:0] i_2_reg_270;
 wire    ap_CS_fsm_state8;
 wire    ap_CS_fsm_state10;
-reg    grp_sha256_final_fu_287_ap_start_reg;
-reg    grp_sha256_update_fu_307_ap_start_reg;
+reg    grp_sha256_final_fu_281_ap_start_reg;
+reg    grp_sha256_update_fu_299_ap_start_reg;
 wire    ap_CS_fsm_state5;
-wire   [63:0] zext_ln39_2_fu_676_p1;
-wire   [63:0] zext_ln39_fu_691_p1;
-wire   [63:0] zext_ln48_2_fu_736_p1;
-wire   [63:0] zext_ln48_fu_746_p1;
-reg   [31:0] n_0_fu_106;
-wire   [31:0] n_fu_681_p2;
-reg   [31:0] sha256ctx_datalen_1_fu_110;
+wire   [63:0] zext_ln39_2_fu_616_p1;
+wire   [63:0] zext_ln39_fu_631_p1;
+wire   [63:0] zext_ln48_2_fu_676_p1;
+wire   [63:0] zext_ln48_fu_686_p1;
+reg   [31:0] n_0_fu_108;
+wire   [31:0] n_fu_621_p2;
+reg   [31:0] sha256ctx_datalen_1_fu_112;
 reg    ap_block_state5_on_subcall_done;
-reg   [31:0] sha256ctx_bitlen_0_2_fu_114;
-reg   [31:0] sha256ctx_bitlen_1_2_fu_118;
-reg   [31:0] sha256ctx_state_0_2_fu_122;
-reg   [31:0] sha256ctx_state_1_2_fu_126;
-reg   [31:0] sha256ctx_state_2_2_fu_130;
-reg   [31:0] sha256ctx_state_3_2_fu_134;
-reg   [31:0] sha256ctx_state_4_2_fu_138;
-reg   [31:0] sha256ctx_state_5_2_fu_142;
-reg   [31:0] sha256ctx_state_6_2_fu_146;
-reg   [31:0] sha256ctx_state_7_2_fu_150;
-reg   [31:0] seg_offset_1_fu_154;
-wire   [31:0] seg_offset_fu_696_p2;
-wire   [25:0] tmp_49_fu_630_p4;
-wire   [9:0] zext_ln39_1_fu_662_p1;
-wire   [9:0] add_ln39_fu_666_p2;
-wire   [9:0] add_ln39_1_fu_671_p2;
-wire   [31:0] zext_ln46_fu_707_p1;
-wire   [9:0] zext_ln48_1_fu_722_p1;
-wire   [9:0] add_ln48_fu_726_p2;
-wire   [9:0] add_ln48_1_fu_731_p2;
+reg   [31:0] sha256ctx_state_7_2_fu_116;
+reg   [31:0] sha256ctx_state_6_2_fu_120;
+reg   [31:0] sha256ctx_state_0_2_fu_124;
+reg   [31:0] sha256ctx_state_1_2_fu_128;
+reg   [31:0] sha256ctx_state_2_2_fu_132;
+reg   [31:0] sha256ctx_state_3_2_fu_136;
+reg   [31:0] sha256ctx_state_4_2_fu_140;
+reg   [31:0] sha256ctx_state_5_2_fu_144;
+reg   [31:0] seg_offset_1_fu_148;
+wire   [31:0] seg_offset_fu_636_p2;
+wire   [25:0] tmp_2_fu_570_p4;
+wire   [9:0] zext_ln39_1_fu_602_p1;
+wire   [9:0] add_ln39_fu_606_p2;
+wire   [9:0] add_ln39_1_fu_611_p2;
+wire   [31:0] zext_ln46_fu_647_p1;
+wire   [9:0] zext_ln48_1_fu_662_p1;
+wire   [9:0] add_ln48_fu_666_p2;
+wire   [9:0] add_ln48_1_fu_671_p2;
 reg   [9:0] ap_NS_fsm;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 10'd1;
-#0 grp_sha256_final_fu_287_ap_start_reg = 1'b0;
-#0 grp_sha256_update_fu_307_ap_start_reg = 1'b0;
+#0 grp_sha256_final_fu_281_ap_start_reg = 1'b0;
+#0 grp_sha256_update_fu_299_ap_start_reg = 1'b0;
 end
 
 sha256_AXILiteS_s_axi #(
@@ -369,10 +359,10 @@ seg_buf_U(
     .we0(seg_buf_we0),
     .d0(seg_buf_d0),
     .q0(seg_buf_q0),
-    .address1(grp_sha256_final_fu_287_hash_address1),
+    .address1(grp_sha256_final_fu_281_hash_address1),
     .ce1(seg_buf_ce1),
     .we1(seg_buf_we1),
-    .d1(grp_sha256_final_fu_287_hash_d1)
+    .d1(grp_sha256_final_fu_281_hash_d1)
 );
 
 sha256_sha256ctx_bkb #(
@@ -390,7 +380,7 @@ sha256ctx_data_0_U(
     .address1(sha256ctx_data_0_address1),
     .ce1(sha256ctx_data_0_ce1),
     .we1(sha256ctx_data_0_we1),
-    .d1(grp_sha256_final_fu_287_ctx_data_0_d1),
+    .d1(grp_sha256_final_fu_281_ctx_data_0_d1),
     .q1(sha256ctx_data_0_q1)
 );
 
@@ -409,7 +399,7 @@ sha256ctx_data_1_U(
     .address1(sha256ctx_data_1_address1),
     .ce1(sha256ctx_data_1_ce1),
     .we1(sha256ctx_data_1_we1),
-    .d1(grp_sha256_final_fu_287_ctx_data_1_d1),
+    .d1(grp_sha256_final_fu_281_ctx_data_1_d1),
     .q1(sha256ctx_data_1_q1)
 );
 
@@ -428,7 +418,7 @@ sha256ctx_data_2_U(
     .address1(sha256ctx_data_2_address1),
     .ce1(sha256ctx_data_2_ce1),
     .we1(sha256ctx_data_2_we1),
-    .d1(grp_sha256_final_fu_287_ctx_data_2_d1),
+    .d1(grp_sha256_final_fu_281_ctx_data_2_d1),
     .q1(sha256ctx_data_2_q1)
 );
 
@@ -447,143 +437,137 @@ sha256ctx_data_3_U(
     .address1(sha256ctx_data_3_address1),
     .ce1(sha256ctx_data_3_ce1),
     .we1(sha256ctx_data_3_we1),
-    .d1(grp_sha256_final_fu_287_ctx_data_3_d1),
+    .d1(grp_sha256_final_fu_281_ctx_data_3_d1),
     .q1(sha256ctx_data_3_q1)
 );
 
-sha256_final grp_sha256_final_fu_287(
+sha256_final grp_sha256_final_fu_281(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_sha256_final_fu_287_ap_start),
-    .ap_done(grp_sha256_final_fu_287_ap_done),
-    .ap_idle(grp_sha256_final_fu_287_ap_idle),
-    .ap_ready(grp_sha256_final_fu_287_ap_ready),
-    .ctx_data_0_address0(grp_sha256_final_fu_287_ctx_data_0_address0),
-    .ctx_data_0_ce0(grp_sha256_final_fu_287_ctx_data_0_ce0),
-    .ctx_data_0_we0(grp_sha256_final_fu_287_ctx_data_0_we0),
-    .ctx_data_0_d0(grp_sha256_final_fu_287_ctx_data_0_d0),
+    .ap_start(grp_sha256_final_fu_281_ap_start),
+    .ap_done(grp_sha256_final_fu_281_ap_done),
+    .ap_idle(grp_sha256_final_fu_281_ap_idle),
+    .ap_ready(grp_sha256_final_fu_281_ap_ready),
+    .ctx_data_0_address0(grp_sha256_final_fu_281_ctx_data_0_address0),
+    .ctx_data_0_ce0(grp_sha256_final_fu_281_ctx_data_0_ce0),
+    .ctx_data_0_we0(grp_sha256_final_fu_281_ctx_data_0_we0),
+    .ctx_data_0_d0(grp_sha256_final_fu_281_ctx_data_0_d0),
     .ctx_data_0_q0(sha256ctx_data_0_q0),
-    .ctx_data_0_address1(grp_sha256_final_fu_287_ctx_data_0_address1),
-    .ctx_data_0_ce1(grp_sha256_final_fu_287_ctx_data_0_ce1),
-    .ctx_data_0_we1(grp_sha256_final_fu_287_ctx_data_0_we1),
-    .ctx_data_0_d1(grp_sha256_final_fu_287_ctx_data_0_d1),
+    .ctx_data_0_address1(grp_sha256_final_fu_281_ctx_data_0_address1),
+    .ctx_data_0_ce1(grp_sha256_final_fu_281_ctx_data_0_ce1),
+    .ctx_data_0_we1(grp_sha256_final_fu_281_ctx_data_0_we1),
+    .ctx_data_0_d1(grp_sha256_final_fu_281_ctx_data_0_d1),
     .ctx_data_0_q1(sha256ctx_data_0_q1),
-    .ctx_data_1_address0(grp_sha256_final_fu_287_ctx_data_1_address0),
-    .ctx_data_1_ce0(grp_sha256_final_fu_287_ctx_data_1_ce0),
-    .ctx_data_1_we0(grp_sha256_final_fu_287_ctx_data_1_we0),
-    .ctx_data_1_d0(grp_sha256_final_fu_287_ctx_data_1_d0),
+    .ctx_data_1_address0(grp_sha256_final_fu_281_ctx_data_1_address0),
+    .ctx_data_1_ce0(grp_sha256_final_fu_281_ctx_data_1_ce0),
+    .ctx_data_1_we0(grp_sha256_final_fu_281_ctx_data_1_we0),
+    .ctx_data_1_d0(grp_sha256_final_fu_281_ctx_data_1_d0),
     .ctx_data_1_q0(sha256ctx_data_1_q0),
-    .ctx_data_1_address1(grp_sha256_final_fu_287_ctx_data_1_address1),
-    .ctx_data_1_ce1(grp_sha256_final_fu_287_ctx_data_1_ce1),
-    .ctx_data_1_we1(grp_sha256_final_fu_287_ctx_data_1_we1),
-    .ctx_data_1_d1(grp_sha256_final_fu_287_ctx_data_1_d1),
+    .ctx_data_1_address1(grp_sha256_final_fu_281_ctx_data_1_address1),
+    .ctx_data_1_ce1(grp_sha256_final_fu_281_ctx_data_1_ce1),
+    .ctx_data_1_we1(grp_sha256_final_fu_281_ctx_data_1_we1),
+    .ctx_data_1_d1(grp_sha256_final_fu_281_ctx_data_1_d1),
     .ctx_data_1_q1(sha256ctx_data_1_q1),
-    .ctx_data_2_address0(grp_sha256_final_fu_287_ctx_data_2_address0),
-    .ctx_data_2_ce0(grp_sha256_final_fu_287_ctx_data_2_ce0),
-    .ctx_data_2_we0(grp_sha256_final_fu_287_ctx_data_2_we0),
-    .ctx_data_2_d0(grp_sha256_final_fu_287_ctx_data_2_d0),
+    .ctx_data_2_address0(grp_sha256_final_fu_281_ctx_data_2_address0),
+    .ctx_data_2_ce0(grp_sha256_final_fu_281_ctx_data_2_ce0),
+    .ctx_data_2_we0(grp_sha256_final_fu_281_ctx_data_2_we0),
+    .ctx_data_2_d0(grp_sha256_final_fu_281_ctx_data_2_d0),
     .ctx_data_2_q0(sha256ctx_data_2_q0),
-    .ctx_data_2_address1(grp_sha256_final_fu_287_ctx_data_2_address1),
-    .ctx_data_2_ce1(grp_sha256_final_fu_287_ctx_data_2_ce1),
-    .ctx_data_2_we1(grp_sha256_final_fu_287_ctx_data_2_we1),
-    .ctx_data_2_d1(grp_sha256_final_fu_287_ctx_data_2_d1),
+    .ctx_data_2_address1(grp_sha256_final_fu_281_ctx_data_2_address1),
+    .ctx_data_2_ce1(grp_sha256_final_fu_281_ctx_data_2_ce1),
+    .ctx_data_2_we1(grp_sha256_final_fu_281_ctx_data_2_we1),
+    .ctx_data_2_d1(grp_sha256_final_fu_281_ctx_data_2_d1),
     .ctx_data_2_q1(sha256ctx_data_2_q1),
-    .ctx_data_3_address0(grp_sha256_final_fu_287_ctx_data_3_address0),
-    .ctx_data_3_ce0(grp_sha256_final_fu_287_ctx_data_3_ce0),
-    .ctx_data_3_we0(grp_sha256_final_fu_287_ctx_data_3_we0),
-    .ctx_data_3_d0(grp_sha256_final_fu_287_ctx_data_3_d0),
+    .ctx_data_3_address0(grp_sha256_final_fu_281_ctx_data_3_address0),
+    .ctx_data_3_ce0(grp_sha256_final_fu_281_ctx_data_3_ce0),
+    .ctx_data_3_we0(grp_sha256_final_fu_281_ctx_data_3_we0),
+    .ctx_data_3_d0(grp_sha256_final_fu_281_ctx_data_3_d0),
     .ctx_data_3_q0(sha256ctx_data_3_q0),
-    .ctx_data_3_address1(grp_sha256_final_fu_287_ctx_data_3_address1),
-    .ctx_data_3_ce1(grp_sha256_final_fu_287_ctx_data_3_ce1),
-    .ctx_data_3_we1(grp_sha256_final_fu_287_ctx_data_3_we1),
-    .ctx_data_3_d1(grp_sha256_final_fu_287_ctx_data_3_d1),
+    .ctx_data_3_address1(grp_sha256_final_fu_281_ctx_data_3_address1),
+    .ctx_data_3_ce1(grp_sha256_final_fu_281_ctx_data_3_ce1),
+    .ctx_data_3_we1(grp_sha256_final_fu_281_ctx_data_3_we1),
+    .ctx_data_3_d1(grp_sha256_final_fu_281_ctx_data_3_d1),
     .ctx_data_3_q1(sha256ctx_data_3_q1),
-    .ctx_datalen_read(reg_486),
-    .ctx_bitlen_0_read(reg_492),
-    .p_read3(reg_498),
-    .p_read2(reg_504),
-    .p_read4(reg_510),
-    .p_read5(reg_516),
-    .p_read6(reg_522),
-    .p_read7(reg_528),
-    .p_read8(reg_534),
-    .p_read9(reg_540),
-    .p_read10(reg_546),
-    .hash_address0(grp_sha256_final_fu_287_hash_address0),
-    .hash_ce0(grp_sha256_final_fu_287_hash_ce0),
-    .hash_we0(grp_sha256_final_fu_287_hash_we0),
-    .hash_d0(grp_sha256_final_fu_287_hash_d0),
-    .hash_address1(grp_sha256_final_fu_287_hash_address1),
-    .hash_ce1(grp_sha256_final_fu_287_hash_ce1),
-    .hash_we1(grp_sha256_final_fu_287_hash_we1),
-    .hash_d1(grp_sha256_final_fu_287_hash_d1)
+    .ctx_datalen_read(reg_448),
+    .p_read3(reg_466),
+    .p_read4(reg_472),
+    .p_read5(reg_478),
+    .p_read6(reg_484),
+    .p_read7(reg_490),
+    .p_read8(reg_496),
+    .p_read9(reg_460),
+    .p_read10(reg_454),
+    .hash_address0(grp_sha256_final_fu_281_hash_address0),
+    .hash_ce0(grp_sha256_final_fu_281_hash_ce0),
+    .hash_we0(grp_sha256_final_fu_281_hash_we0),
+    .hash_d0(grp_sha256_final_fu_281_hash_d0),
+    .hash_address1(grp_sha256_final_fu_281_hash_address1),
+    .hash_ce1(grp_sha256_final_fu_281_hash_ce1),
+    .hash_we1(grp_sha256_final_fu_281_hash_we1),
+    .hash_d1(grp_sha256_final_fu_281_hash_d1)
 );
 
-sha256_update grp_sha256_update_fu_307(
+sha256_update grp_sha256_update_fu_299(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_sha256_update_fu_307_ap_start),
-    .ap_done(grp_sha256_update_fu_307_ap_done),
-    .ap_idle(grp_sha256_update_fu_307_ap_idle),
-    .ap_ready(grp_sha256_update_fu_307_ap_ready),
-    .ctx_data_0_address0(grp_sha256_update_fu_307_ctx_data_0_address0),
-    .ctx_data_0_ce0(grp_sha256_update_fu_307_ctx_data_0_ce0),
-    .ctx_data_0_we0(grp_sha256_update_fu_307_ctx_data_0_we0),
-    .ctx_data_0_d0(grp_sha256_update_fu_307_ctx_data_0_d0),
+    .ap_start(grp_sha256_update_fu_299_ap_start),
+    .ap_done(grp_sha256_update_fu_299_ap_done),
+    .ap_idle(grp_sha256_update_fu_299_ap_idle),
+    .ap_ready(grp_sha256_update_fu_299_ap_ready),
+    .ctx_data_0_address0(grp_sha256_update_fu_299_ctx_data_0_address0),
+    .ctx_data_0_ce0(grp_sha256_update_fu_299_ctx_data_0_ce0),
+    .ctx_data_0_we0(grp_sha256_update_fu_299_ctx_data_0_we0),
+    .ctx_data_0_d0(grp_sha256_update_fu_299_ctx_data_0_d0),
     .ctx_data_0_q0(sha256ctx_data_0_q0),
-    .ctx_data_0_address1(grp_sha256_update_fu_307_ctx_data_0_address1),
-    .ctx_data_0_ce1(grp_sha256_update_fu_307_ctx_data_0_ce1),
+    .ctx_data_0_address1(grp_sha256_update_fu_299_ctx_data_0_address1),
+    .ctx_data_0_ce1(grp_sha256_update_fu_299_ctx_data_0_ce1),
     .ctx_data_0_q1(sha256ctx_data_0_q1),
-    .ctx_data_1_address0(grp_sha256_update_fu_307_ctx_data_1_address0),
-    .ctx_data_1_ce0(grp_sha256_update_fu_307_ctx_data_1_ce0),
-    .ctx_data_1_we0(grp_sha256_update_fu_307_ctx_data_1_we0),
-    .ctx_data_1_d0(grp_sha256_update_fu_307_ctx_data_1_d0),
+    .ctx_data_1_address0(grp_sha256_update_fu_299_ctx_data_1_address0),
+    .ctx_data_1_ce0(grp_sha256_update_fu_299_ctx_data_1_ce0),
+    .ctx_data_1_we0(grp_sha256_update_fu_299_ctx_data_1_we0),
+    .ctx_data_1_d0(grp_sha256_update_fu_299_ctx_data_1_d0),
     .ctx_data_1_q0(sha256ctx_data_1_q0),
-    .ctx_data_1_address1(grp_sha256_update_fu_307_ctx_data_1_address1),
-    .ctx_data_1_ce1(grp_sha256_update_fu_307_ctx_data_1_ce1),
+    .ctx_data_1_address1(grp_sha256_update_fu_299_ctx_data_1_address1),
+    .ctx_data_1_ce1(grp_sha256_update_fu_299_ctx_data_1_ce1),
     .ctx_data_1_q1(sha256ctx_data_1_q1),
-    .ctx_data_2_address0(grp_sha256_update_fu_307_ctx_data_2_address0),
-    .ctx_data_2_ce0(grp_sha256_update_fu_307_ctx_data_2_ce0),
-    .ctx_data_2_we0(grp_sha256_update_fu_307_ctx_data_2_we0),
-    .ctx_data_2_d0(grp_sha256_update_fu_307_ctx_data_2_d0),
+    .ctx_data_2_address0(grp_sha256_update_fu_299_ctx_data_2_address0),
+    .ctx_data_2_ce0(grp_sha256_update_fu_299_ctx_data_2_ce0),
+    .ctx_data_2_we0(grp_sha256_update_fu_299_ctx_data_2_we0),
+    .ctx_data_2_d0(grp_sha256_update_fu_299_ctx_data_2_d0),
     .ctx_data_2_q0(sha256ctx_data_2_q0),
-    .ctx_data_2_address1(grp_sha256_update_fu_307_ctx_data_2_address1),
-    .ctx_data_2_ce1(grp_sha256_update_fu_307_ctx_data_2_ce1),
+    .ctx_data_2_address1(grp_sha256_update_fu_299_ctx_data_2_address1),
+    .ctx_data_2_ce1(grp_sha256_update_fu_299_ctx_data_2_ce1),
     .ctx_data_2_q1(sha256ctx_data_2_q1),
-    .ctx_data_3_address0(grp_sha256_update_fu_307_ctx_data_3_address0),
-    .ctx_data_3_ce0(grp_sha256_update_fu_307_ctx_data_3_ce0),
-    .ctx_data_3_we0(grp_sha256_update_fu_307_ctx_data_3_we0),
-    .ctx_data_3_d0(grp_sha256_update_fu_307_ctx_data_3_d0),
+    .ctx_data_3_address0(grp_sha256_update_fu_299_ctx_data_3_address0),
+    .ctx_data_3_ce0(grp_sha256_update_fu_299_ctx_data_3_ce0),
+    .ctx_data_3_we0(grp_sha256_update_fu_299_ctx_data_3_we0),
+    .ctx_data_3_d0(grp_sha256_update_fu_299_ctx_data_3_d0),
     .ctx_data_3_q0(sha256ctx_data_3_q0),
-    .ctx_data_3_address1(grp_sha256_update_fu_307_ctx_data_3_address1),
-    .ctx_data_3_ce1(grp_sha256_update_fu_307_ctx_data_3_ce1),
+    .ctx_data_3_address1(grp_sha256_update_fu_299_ctx_data_3_address1),
+    .ctx_data_3_ce1(grp_sha256_update_fu_299_ctx_data_3_ce1),
     .ctx_data_3_q1(sha256ctx_data_3_q1),
-    .ctx_datalen_read(grp_sha256_update_fu_307_ctx_datalen_read),
-    .p_read1(grp_sha256_update_fu_307_p_read1),
-    .p_read2(grp_sha256_update_fu_307_p_read2),
-    .p_read3(grp_sha256_update_fu_307_p_read3),
-    .p_read4(grp_sha256_update_fu_307_p_read4),
-    .p_read5(grp_sha256_update_fu_307_p_read5),
-    .p_read6(grp_sha256_update_fu_307_p_read6),
-    .p_read7(grp_sha256_update_fu_307_p_read7),
-    .p_read8(grp_sha256_update_fu_307_p_read8),
-    .p_read9(grp_sha256_update_fu_307_p_read9),
-    .p_read10(grp_sha256_update_fu_307_p_read10),
-    .data_address0(grp_sha256_update_fu_307_data_address0),
-    .data_ce0(grp_sha256_update_fu_307_data_ce0),
+    .ctx_datalen_read(grp_sha256_update_fu_299_ctx_datalen_read),
+    .p_read1(grp_sha256_update_fu_299_p_read1),
+    .p_read2(grp_sha256_update_fu_299_p_read2),
+    .p_read3(grp_sha256_update_fu_299_p_read3),
+    .p_read4(grp_sha256_update_fu_299_p_read4),
+    .p_read5(grp_sha256_update_fu_299_p_read5),
+    .p_read6(grp_sha256_update_fu_299_p_read6),
+    .p_read7(grp_sha256_update_fu_299_p_read7),
+    .p_read8(grp_sha256_update_fu_299_p_read8),
+    .data_address0(grp_sha256_update_fu_299_data_address0),
+    .data_ce0(grp_sha256_update_fu_299_data_ce0),
     .data_q0(seg_buf_q0),
-    .len(grp_sha256_update_fu_307_len),
-    .ap_return_0(grp_sha256_update_fu_307_ap_return_0),
-    .ap_return_1(grp_sha256_update_fu_307_ap_return_1),
-    .ap_return_2(grp_sha256_update_fu_307_ap_return_2),
-    .ap_return_3(grp_sha256_update_fu_307_ap_return_3),
-    .ap_return_4(grp_sha256_update_fu_307_ap_return_4),
-    .ap_return_5(grp_sha256_update_fu_307_ap_return_5),
-    .ap_return_6(grp_sha256_update_fu_307_ap_return_6),
-    .ap_return_7(grp_sha256_update_fu_307_ap_return_7),
-    .ap_return_8(grp_sha256_update_fu_307_ap_return_8),
-    .ap_return_9(grp_sha256_update_fu_307_ap_return_9),
-    .ap_return_10(grp_sha256_update_fu_307_ap_return_10)
+    .len(grp_sha256_update_fu_299_len),
+    .ap_return_0(grp_sha256_update_fu_299_ap_return_0),
+    .ap_return_1(grp_sha256_update_fu_299_ap_return_1),
+    .ap_return_2(grp_sha256_update_fu_299_ap_return_2),
+    .ap_return_3(grp_sha256_update_fu_299_ap_return_3),
+    .ap_return_4(grp_sha256_update_fu_299_ap_return_4),
+    .ap_return_5(grp_sha256_update_fu_299_ap_return_5),
+    .ap_return_6(grp_sha256_update_fu_299_ap_return_6),
+    .ap_return_7(grp_sha256_update_fu_299_ap_return_7),
+    .ap_return_8(grp_sha256_update_fu_299_ap_return_8)
 );
 
 always @ (posedge ap_clk) begin
@@ -596,235 +580,215 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_sha256_final_fu_287_ap_start_reg <= 1'b0;
+        grp_sha256_final_fu_281_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln33_fu_624_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-            grp_sha256_final_fu_287_ap_start_reg <= 1'b1;
-        end else if ((grp_sha256_final_fu_287_ap_ready == 1'b1)) begin
-            grp_sha256_final_fu_287_ap_start_reg <= 1'b0;
+        if (((icmp_ln33_fu_564_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            grp_sha256_final_fu_281_ap_start_reg <= 1'b1;
+        end else if ((grp_sha256_final_fu_281_ap_ready == 1'b1)) begin
+            grp_sha256_final_fu_281_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_sha256_update_fu_307_ap_start_reg <= 1'b0;
+        grp_sha256_update_fu_299_ap_start_reg <= 1'b0;
     end else begin
-        if ((((icmp_ln38_fu_650_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)) | ((icmp_ln46_fu_711_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6)))) begin
-            grp_sha256_update_fu_307_ap_start_reg <= 1'b1;
-        end else if ((grp_sha256_update_fu_307_ap_ready == 1'b1)) begin
-            grp_sha256_update_fu_307_ap_start_reg <= 1'b0;
+        if ((((icmp_ln38_fu_590_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)) | ((icmp_ln46_fu_651_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6)))) begin
+            grp_sha256_update_fu_299_ap_start_reg <= 1'b1;
+        end else if ((grp_sha256_update_fu_299_ap_ready == 1'b1)) begin
+            grp_sha256_update_fu_299_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln33_fu_624_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2) & (icmp_ln36_fu_640_p2 == 1'd0))) begin
-        i_0_reg_252 <= 7'd0;
+    if (((icmp_ln33_fu_564_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2) & (icmp_ln36_fu_580_p2 == 1'd0))) begin
+        i_0_reg_246 <= 7'd0;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        i_0_reg_252 <= i_4_reg_889;
+        i_0_reg_246 <= i_4_reg_815;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln36_fu_640_p2 == 1'd1) & (icmp_ln33_fu_624_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_1_reg_264 <= 6'd0;
+    if (((icmp_ln36_fu_580_p2 == 1'd1) & (icmp_ln33_fu_564_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        i_1_reg_258 <= 6'd0;
     end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        i_1_reg_264 <= i_3_reg_902;
+        i_1_reg_258 <= i_3_reg_828;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
-        i_2_reg_276 <= i_reg_970;
-    end else if (((grp_sha256_final_fu_287_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state8))) begin
-        i_2_reg_276 <= 6'd0;
+        i_2_reg_270 <= i_reg_886;
+    end else if (((grp_sha256_final_fu_281_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state8))) begin
+        i_2_reg_270 <= 6'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln46_fu_711_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        n_0_fu_106 <= 32'd0;
-    end else if (((icmp_ln38_fu_650_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        n_0_fu_106 <= n_fu_681_p2;
+    if (((icmp_ln46_fu_651_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+        n_0_fu_108 <= 32'd0;
+    end else if (((icmp_ln38_fu_590_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+        n_0_fu_108 <= n_fu_621_p2;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        n_0_fu_106 <= bytes;
+        n_0_fu_108 <= bytes;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0))) begin
-        seg_offset_1_fu_154 <= seg_offset_fu_696_p2;
+    if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0))) begin
+        seg_offset_1_fu_148 <= seg_offset_fu_636_p2;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        seg_offset_1_fu_154 <= 32'd0;
+        seg_offset_1_fu_148 <= 32'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_bitlen_0_2_fu_114 <= grp_sha256_update_fu_307_ap_return_1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_datalen_1_fu_112 <= grp_sha256_update_fu_299_ap_return_0;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_bitlen_0_2_fu_114 <= 32'd0;
+        sha256ctx_datalen_1_fu_112 <= 32'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_bitlen_1_2_fu_118 <= grp_sha256_update_fu_307_ap_return_2;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_0_2_fu_124 <= grp_sha256_update_fu_299_ap_return_1;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_bitlen_1_2_fu_118 <= 32'd0;
+        sha256ctx_state_0_2_fu_124 <= 32'd1779033703;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_datalen_1_fu_110 <= grp_sha256_update_fu_307_ap_return_0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_1_2_fu_128 <= grp_sha256_update_fu_299_ap_return_2;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_datalen_1_fu_110 <= 32'd0;
+        sha256ctx_state_1_2_fu_128 <= 32'd3144134277;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_0_2_fu_122 <= grp_sha256_update_fu_307_ap_return_3;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_2_2_fu_132 <= grp_sha256_update_fu_299_ap_return_3;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_0_2_fu_122 <= 32'd1779033703;
+        sha256ctx_state_2_2_fu_132 <= 32'd1013904242;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_1_2_fu_126 <= grp_sha256_update_fu_307_ap_return_4;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_3_2_fu_136 <= grp_sha256_update_fu_299_ap_return_4;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_1_2_fu_126 <= 32'd3144134277;
+        sha256ctx_state_3_2_fu_136 <= 32'd2773480762;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_2_2_fu_130 <= grp_sha256_update_fu_307_ap_return_5;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_4_2_fu_140 <= grp_sha256_update_fu_299_ap_return_5;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_2_2_fu_130 <= 32'd1013904242;
+        sha256ctx_state_4_2_fu_140 <= 32'd1359893119;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_3_2_fu_134 <= grp_sha256_update_fu_307_ap_return_6;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_5_2_fu_144 <= grp_sha256_update_fu_299_ap_return_6;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_3_2_fu_134 <= 32'd2773480762;
+        sha256ctx_state_5_2_fu_144 <= 32'd2600822924;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_4_2_fu_138 <= grp_sha256_update_fu_307_ap_return_7;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_6_2_fu_120 <= grp_sha256_update_fu_299_ap_return_7;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_4_2_fu_138 <= 32'd1359893119;
+        sha256ctx_state_6_2_fu_120 <= 32'd528734635;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_5_2_fu_142 <= grp_sha256_update_fu_307_ap_return_8;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_state_7_2_fu_116 <= grp_sha256_update_fu_299_ap_return_8;
     end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_5_2_fu_142 <= 32'd2600822924;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_6_2_fu_146 <= grp_sha256_update_fu_307_ap_return_9;
-    end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_6_2_fu_146 <= 32'd528734635;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5)) | ((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_state_7_2_fu_150 <= grp_sha256_update_fu_307_ap_return_10;
-    end else if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        sha256ctx_state_7_2_fu_150 <= 32'd1541459225;
+        sha256ctx_state_7_2_fu_116 <= 32'd1541459225;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        i_3_reg_902 <= i_3_fu_716_p2;
+        i_3_reg_828 <= i_3_fu_656_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        i_4_reg_889 <= i_4_fu_656_p2;
+        i_4_reg_815 <= i_4_fu_596_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
-        i_reg_970 <= i_fu_757_p2;
+        i_reg_886 <= i_fu_697_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln33_fu_624_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        icmp_ln36_reg_876 <= icmp_ln36_fu_640_p2;
-        trunc_ln36_reg_880 <= trunc_ln36_fu_646_p1;
+    if (((icmp_ln33_fu_564_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        icmp_ln36_reg_802 <= icmp_ln36_fu_580_p2;
+        trunc_ln36_reg_806 <= trunc_ln36_fu_586_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        n_0_load_reg_866 <= n_0_fu_106;
+        n_0_load_reg_792 <= n_0_fu_108;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((icmp_ln38_fu_650_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)) | ((icmp_ln33_fu_624_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)))) begin
-        reg_486 <= sha256ctx_datalen_1_fu_110;
-        reg_492 <= sha256ctx_bitlen_0_2_fu_114;
-        reg_498 <= sha256ctx_bitlen_1_2_fu_118;
-        reg_504 <= sha256ctx_state_0_2_fu_122;
-        reg_510 <= sha256ctx_state_1_2_fu_126;
-        reg_516 <= sha256ctx_state_2_2_fu_130;
-        reg_522 <= sha256ctx_state_3_2_fu_134;
-        reg_528 <= sha256ctx_state_4_2_fu_138;
-        reg_534 <= sha256ctx_state_5_2_fu_142;
-        reg_540 <= sha256ctx_state_6_2_fu_146;
-        reg_546 <= sha256ctx_state_7_2_fu_150;
+    if ((((icmp_ln38_fu_590_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3)) | ((icmp_ln33_fu_564_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)))) begin
+        reg_448 <= sha256ctx_datalen_1_fu_112;
+        reg_454 <= sha256ctx_state_7_2_fu_116;
+        reg_460 <= sha256ctx_state_6_2_fu_120;
+        reg_466 <= sha256ctx_state_0_2_fu_124;
+        reg_472 <= sha256ctx_state_1_2_fu_128;
+        reg_478 <= sha256ctx_state_2_2_fu_132;
+        reg_484 <= sha256ctx_state_3_2_fu_136;
+        reg_490 <= sha256ctx_state_4_2_fu_140;
+        reg_496 <= sha256ctx_state_5_2_fu_144;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln46_fu_711_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        sha256ctx_bitlen_0_1_reg_917 <= sha256ctx_bitlen_0_2_fu_114;
-        sha256ctx_bitlen_1_1_reg_922 <= sha256ctx_bitlen_1_2_fu_118;
-        sha256ctx_datalen_1_1_reg_912 <= sha256ctx_datalen_1_fu_110;
-        sha256ctx_state_0_2_2_reg_927 <= sha256ctx_state_0_2_fu_122;
-        sha256ctx_state_1_2_2_reg_932 <= sha256ctx_state_1_2_fu_126;
-        sha256ctx_state_2_2_2_reg_937 <= sha256ctx_state_2_2_fu_130;
-        sha256ctx_state_3_2_2_reg_942 <= sha256ctx_state_3_2_fu_134;
-        sha256ctx_state_4_2_2_reg_947 <= sha256ctx_state_4_2_fu_138;
-        sha256ctx_state_5_2_2_reg_952 <= sha256ctx_state_5_2_fu_142;
-        sha256ctx_state_6_2_2_reg_957 <= sha256ctx_state_6_2_fu_146;
-        sha256ctx_state_7_2_2_reg_962 <= sha256ctx_state_7_2_fu_150;
+    if (((icmp_ln46_fu_651_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+        sha256ctx_datalen_1_1_reg_838 <= sha256ctx_datalen_1_fu_112;
+        sha256ctx_state_0_2_2_reg_853 <= sha256ctx_state_0_2_fu_124;
+        sha256ctx_state_1_2_2_reg_858 <= sha256ctx_state_1_2_fu_128;
+        sha256ctx_state_2_2_2_reg_863 <= sha256ctx_state_2_2_fu_132;
+        sha256ctx_state_3_2_2_reg_868 <= sha256ctx_state_3_2_fu_136;
+        sha256ctx_state_4_2_2_reg_873 <= sha256ctx_state_4_2_fu_140;
+        sha256ctx_state_5_2_2_reg_878 <= sha256ctx_state_5_2_fu_144;
+        sha256ctx_state_6_2_2_reg_848 <= sha256ctx_state_6_2_fu_120;
+        sha256ctx_state_7_2_2_reg_843 <= sha256ctx_state_7_2_fu_116;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        trunc_ln33_reg_860 <= trunc_ln33_fu_552_p1;
+        trunc_ln33_reg_786 <= trunc_ln33_fu_502_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state9) & (icmp_ln57_fu_751_p2 == 1'd0))) begin
-        zext_ln59_reg_975[5 : 0] <= zext_ln59_fu_763_p1[5 : 0];
+    if (((1'b1 == ap_CS_fsm_state9) & (icmp_ln57_fu_691_p2 == 1'd0))) begin
+        zext_ln59_reg_891[5 : 0] <= zext_ln59_fu_703_p1[5 : 0];
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln57_fu_751_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
+    if (((icmp_ln57_fu_691_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -840,7 +804,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln57_fu_751_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
+    if (((icmp_ln57_fu_691_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -849,9 +813,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        data_address0 = zext_ln48_2_fu_736_p1;
+        data_address0 = zext_ln48_2_fu_676_p1;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        data_address0 = zext_ln39_2_fu_676_p1;
+        data_address0 = zext_ln39_2_fu_616_p1;
     end else begin
         data_address0 = 'bx;
     end
@@ -883,183 +847,155 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_ctx_datalen_read = sha256ctx_datalen_1_1_reg_912;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_ctx_datalen_read = reg_486;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_ctx_datalen_read = sha256ctx_datalen_1_1_reg_838;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_ctx_datalen_read = reg_448;
         end else begin
-            grp_sha256_update_fu_307_ctx_datalen_read = 'bx;
+            grp_sha256_update_fu_299_ctx_datalen_read = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_ctx_datalen_read = 'bx;
+        grp_sha256_update_fu_299_ctx_datalen_read = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_len = n_0_load_reg_866;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_len = 32'd64;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_len = n_0_load_reg_792;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_len = 32'd64;
         end else begin
-            grp_sha256_update_fu_307_len = 'bx;
+            grp_sha256_update_fu_299_len = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_len = 'bx;
+        grp_sha256_update_fu_299_len = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read1 = sha256ctx_bitlen_0_1_reg_917;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read1 = reg_492;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read1 = sha256ctx_state_0_2_2_reg_853;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read1 = reg_466;
         end else begin
-            grp_sha256_update_fu_307_p_read1 = 'bx;
+            grp_sha256_update_fu_299_p_read1 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read1 = 'bx;
+        grp_sha256_update_fu_299_p_read1 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read10 = sha256ctx_state_7_2_2_reg_962;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read10 = reg_546;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read2 = sha256ctx_state_1_2_2_reg_858;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read2 = reg_472;
         end else begin
-            grp_sha256_update_fu_307_p_read10 = 'bx;
+            grp_sha256_update_fu_299_p_read2 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read10 = 'bx;
+        grp_sha256_update_fu_299_p_read2 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read2 = sha256ctx_bitlen_1_1_reg_922;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read2 = reg_498;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read3 = sha256ctx_state_2_2_2_reg_863;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read3 = reg_478;
         end else begin
-            grp_sha256_update_fu_307_p_read2 = 'bx;
+            grp_sha256_update_fu_299_p_read3 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read2 = 'bx;
+        grp_sha256_update_fu_299_p_read3 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read3 = sha256ctx_state_0_2_2_reg_927;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read3 = reg_504;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read4 = sha256ctx_state_3_2_2_reg_868;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read4 = reg_484;
         end else begin
-            grp_sha256_update_fu_307_p_read3 = 'bx;
+            grp_sha256_update_fu_299_p_read4 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read3 = 'bx;
+        grp_sha256_update_fu_299_p_read4 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read4 = sha256ctx_state_1_2_2_reg_932;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read4 = reg_510;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read5 = sha256ctx_state_4_2_2_reg_873;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read5 = reg_490;
         end else begin
-            grp_sha256_update_fu_307_p_read4 = 'bx;
+            grp_sha256_update_fu_299_p_read5 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read4 = 'bx;
+        grp_sha256_update_fu_299_p_read5 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read5 = sha256ctx_state_2_2_2_reg_937;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read5 = reg_516;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read6 = sha256ctx_state_5_2_2_reg_878;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read6 = reg_496;
         end else begin
-            grp_sha256_update_fu_307_p_read5 = 'bx;
+            grp_sha256_update_fu_299_p_read6 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read5 = 'bx;
+        grp_sha256_update_fu_299_p_read6 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read6 = sha256ctx_state_3_2_2_reg_942;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read6 = reg_522;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read7 = sha256ctx_state_6_2_2_reg_848;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read7 = reg_460;
         end else begin
-            grp_sha256_update_fu_307_p_read6 = 'bx;
+            grp_sha256_update_fu_299_p_read7 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read6 = 'bx;
+        grp_sha256_update_fu_299_p_read7 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read7 = sha256ctx_state_4_2_2_reg_947;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read7 = reg_528;
+        if ((icmp_ln36_reg_802 == 1'd1)) begin
+            grp_sha256_update_fu_299_p_read8 = sha256ctx_state_7_2_2_reg_843;
+        end else if ((icmp_ln36_reg_802 == 1'd0)) begin
+            grp_sha256_update_fu_299_p_read8 = reg_454;
         end else begin
-            grp_sha256_update_fu_307_p_read7 = 'bx;
+            grp_sha256_update_fu_299_p_read8 = 'bx;
         end
     end else begin
-        grp_sha256_update_fu_307_p_read7 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read8 = sha256ctx_state_5_2_2_reg_952;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read8 = reg_534;
-        end else begin
-            grp_sha256_update_fu_307_p_read8 = 'bx;
-        end
-    end else begin
-        grp_sha256_update_fu_307_p_read8 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        if ((icmp_ln36_reg_876 == 1'd1)) begin
-            grp_sha256_update_fu_307_p_read9 = sha256ctx_state_6_2_2_reg_957;
-        end else if ((icmp_ln36_reg_876 == 1'd0)) begin
-            grp_sha256_update_fu_307_p_read9 = reg_540;
-        end else begin
-            grp_sha256_update_fu_307_p_read9 = 'bx;
-        end
-    end else begin
-        grp_sha256_update_fu_307_p_read9 = 'bx;
+        grp_sha256_update_fu_299_p_read8 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
-        seg_buf_address0 = zext_ln59_fu_763_p1;
+        seg_buf_address0 = zext_ln59_fu_703_p1;
     end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        seg_buf_address0 = zext_ln48_fu_746_p1;
+        seg_buf_address0 = zext_ln48_fu_686_p1;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        seg_buf_address0 = zext_ln39_fu_691_p1;
-    end else if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        seg_buf_address0 = grp_sha256_update_fu_307_data_address0;
+        seg_buf_address0 = zext_ln39_fu_631_p1;
+    end else if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        seg_buf_address0 = grp_sha256_update_fu_299_data_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        seg_buf_address0 = grp_sha256_final_fu_287_hash_address0;
+        seg_buf_address0 = grp_sha256_final_fu_281_hash_address0;
     end else begin
         seg_buf_address0 = 'bx;
     end
@@ -1068,10 +1004,10 @@ end
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state9))) begin
         seg_buf_ce0 = 1'b1;
-    end else if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        seg_buf_ce0 = grp_sha256_update_fu_307_data_ce0;
+    end else if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        seg_buf_ce0 = grp_sha256_update_fu_299_data_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        seg_buf_ce0 = grp_sha256_final_fu_287_hash_ce0;
+        seg_buf_ce0 = grp_sha256_final_fu_281_hash_ce0;
     end else begin
         seg_buf_ce0 = 1'b0;
     end
@@ -1079,7 +1015,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        seg_buf_ce1 = grp_sha256_final_fu_287_hash_ce1;
+        seg_buf_ce1 = grp_sha256_final_fu_281_hash_ce1;
     end else begin
         seg_buf_ce1 = 1'b0;
     end
@@ -1089,7 +1025,7 @@ always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state4))) begin
         seg_buf_d0 = data_q0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        seg_buf_d0 = grp_sha256_final_fu_287_hash_d0;
+        seg_buf_d0 = grp_sha256_final_fu_281_hash_d0;
     end else begin
         seg_buf_d0 = 'bx;
     end
@@ -1099,7 +1035,7 @@ always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state4))) begin
         seg_buf_we0 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        seg_buf_we0 = grp_sha256_final_fu_287_hash_we0;
+        seg_buf_we0 = grp_sha256_final_fu_281_hash_we0;
     end else begin
         seg_buf_we0 = 1'b0;
     end
@@ -1107,67 +1043,67 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        seg_buf_we1 = grp_sha256_final_fu_287_hash_we1;
+        seg_buf_we1 = grp_sha256_final_fu_281_hash_we1;
     end else begin
         seg_buf_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_0_address0 = grp_sha256_update_fu_307_ctx_data_0_address0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_0_address0 = grp_sha256_update_fu_299_ctx_data_0_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_0_address0 = grp_sha256_final_fu_287_ctx_data_0_address0;
+        sha256ctx_data_0_address0 = grp_sha256_final_fu_281_ctx_data_0_address0;
     end else begin
         sha256ctx_data_0_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_0_address1 = grp_sha256_update_fu_307_ctx_data_0_address1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_0_address1 = grp_sha256_update_fu_299_ctx_data_0_address1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_0_address1 = grp_sha256_final_fu_287_ctx_data_0_address1;
+        sha256ctx_data_0_address1 = grp_sha256_final_fu_281_ctx_data_0_address1;
     end else begin
         sha256ctx_data_0_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_0_ce0 = grp_sha256_update_fu_307_ctx_data_0_ce0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_0_ce0 = grp_sha256_update_fu_299_ctx_data_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_0_ce0 = grp_sha256_final_fu_287_ctx_data_0_ce0;
+        sha256ctx_data_0_ce0 = grp_sha256_final_fu_281_ctx_data_0_ce0;
     end else begin
         sha256ctx_data_0_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_0_ce1 = grp_sha256_update_fu_307_ctx_data_0_ce1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_0_ce1 = grp_sha256_update_fu_299_ctx_data_0_ce1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_0_ce1 = grp_sha256_final_fu_287_ctx_data_0_ce1;
+        sha256ctx_data_0_ce1 = grp_sha256_final_fu_281_ctx_data_0_ce1;
     end else begin
         sha256ctx_data_0_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_0_d0 = grp_sha256_update_fu_307_ctx_data_0_d0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_0_d0 = grp_sha256_update_fu_299_ctx_data_0_d0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_0_d0 = grp_sha256_final_fu_287_ctx_data_0_d0;
+        sha256ctx_data_0_d0 = grp_sha256_final_fu_281_ctx_data_0_d0;
     end else begin
         sha256ctx_data_0_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_0_we0 = grp_sha256_update_fu_307_ctx_data_0_we0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_0_we0 = grp_sha256_update_fu_299_ctx_data_0_we0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_0_we0 = grp_sha256_final_fu_287_ctx_data_0_we0;
+        sha256ctx_data_0_we0 = grp_sha256_final_fu_281_ctx_data_0_we0;
     end else begin
         sha256ctx_data_0_we0 = 1'b0;
     end
@@ -1175,67 +1111,67 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_0_we1 = grp_sha256_final_fu_287_ctx_data_0_we1;
+        sha256ctx_data_0_we1 = grp_sha256_final_fu_281_ctx_data_0_we1;
     end else begin
         sha256ctx_data_0_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_1_address0 = grp_sha256_update_fu_307_ctx_data_1_address0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_1_address0 = grp_sha256_update_fu_299_ctx_data_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_1_address0 = grp_sha256_final_fu_287_ctx_data_1_address0;
+        sha256ctx_data_1_address0 = grp_sha256_final_fu_281_ctx_data_1_address0;
     end else begin
         sha256ctx_data_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_1_address1 = grp_sha256_update_fu_307_ctx_data_1_address1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_1_address1 = grp_sha256_update_fu_299_ctx_data_1_address1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_1_address1 = grp_sha256_final_fu_287_ctx_data_1_address1;
+        sha256ctx_data_1_address1 = grp_sha256_final_fu_281_ctx_data_1_address1;
     end else begin
         sha256ctx_data_1_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_1_ce0 = grp_sha256_update_fu_307_ctx_data_1_ce0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_1_ce0 = grp_sha256_update_fu_299_ctx_data_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_1_ce0 = grp_sha256_final_fu_287_ctx_data_1_ce0;
+        sha256ctx_data_1_ce0 = grp_sha256_final_fu_281_ctx_data_1_ce0;
     end else begin
         sha256ctx_data_1_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_1_ce1 = grp_sha256_update_fu_307_ctx_data_1_ce1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_1_ce1 = grp_sha256_update_fu_299_ctx_data_1_ce1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_1_ce1 = grp_sha256_final_fu_287_ctx_data_1_ce1;
+        sha256ctx_data_1_ce1 = grp_sha256_final_fu_281_ctx_data_1_ce1;
     end else begin
         sha256ctx_data_1_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_1_d0 = grp_sha256_update_fu_307_ctx_data_1_d0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_1_d0 = grp_sha256_update_fu_299_ctx_data_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_1_d0 = grp_sha256_final_fu_287_ctx_data_1_d0;
+        sha256ctx_data_1_d0 = grp_sha256_final_fu_281_ctx_data_1_d0;
     end else begin
         sha256ctx_data_1_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_1_we0 = grp_sha256_update_fu_307_ctx_data_1_we0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_1_we0 = grp_sha256_update_fu_299_ctx_data_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_1_we0 = grp_sha256_final_fu_287_ctx_data_1_we0;
+        sha256ctx_data_1_we0 = grp_sha256_final_fu_281_ctx_data_1_we0;
     end else begin
         sha256ctx_data_1_we0 = 1'b0;
     end
@@ -1243,67 +1179,67 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_1_we1 = grp_sha256_final_fu_287_ctx_data_1_we1;
+        sha256ctx_data_1_we1 = grp_sha256_final_fu_281_ctx_data_1_we1;
     end else begin
         sha256ctx_data_1_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_2_address0 = grp_sha256_update_fu_307_ctx_data_2_address0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_2_address0 = grp_sha256_update_fu_299_ctx_data_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_2_address0 = grp_sha256_final_fu_287_ctx_data_2_address0;
+        sha256ctx_data_2_address0 = grp_sha256_final_fu_281_ctx_data_2_address0;
     end else begin
         sha256ctx_data_2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_2_address1 = grp_sha256_update_fu_307_ctx_data_2_address1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_2_address1 = grp_sha256_update_fu_299_ctx_data_2_address1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_2_address1 = grp_sha256_final_fu_287_ctx_data_2_address1;
+        sha256ctx_data_2_address1 = grp_sha256_final_fu_281_ctx_data_2_address1;
     end else begin
         sha256ctx_data_2_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_2_ce0 = grp_sha256_update_fu_307_ctx_data_2_ce0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_2_ce0 = grp_sha256_update_fu_299_ctx_data_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_2_ce0 = grp_sha256_final_fu_287_ctx_data_2_ce0;
+        sha256ctx_data_2_ce0 = grp_sha256_final_fu_281_ctx_data_2_ce0;
     end else begin
         sha256ctx_data_2_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_2_ce1 = grp_sha256_update_fu_307_ctx_data_2_ce1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_2_ce1 = grp_sha256_update_fu_299_ctx_data_2_ce1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_2_ce1 = grp_sha256_final_fu_287_ctx_data_2_ce1;
+        sha256ctx_data_2_ce1 = grp_sha256_final_fu_281_ctx_data_2_ce1;
     end else begin
         sha256ctx_data_2_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_2_d0 = grp_sha256_update_fu_307_ctx_data_2_d0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_2_d0 = grp_sha256_update_fu_299_ctx_data_2_d0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_2_d0 = grp_sha256_final_fu_287_ctx_data_2_d0;
+        sha256ctx_data_2_d0 = grp_sha256_final_fu_281_ctx_data_2_d0;
     end else begin
         sha256ctx_data_2_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_2_we0 = grp_sha256_update_fu_307_ctx_data_2_we0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_2_we0 = grp_sha256_update_fu_299_ctx_data_2_we0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_2_we0 = grp_sha256_final_fu_287_ctx_data_2_we0;
+        sha256ctx_data_2_we0 = grp_sha256_final_fu_281_ctx_data_2_we0;
     end else begin
         sha256ctx_data_2_we0 = 1'b0;
     end
@@ -1311,67 +1247,67 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_2_we1 = grp_sha256_final_fu_287_ctx_data_2_we1;
+        sha256ctx_data_2_we1 = grp_sha256_final_fu_281_ctx_data_2_we1;
     end else begin
         sha256ctx_data_2_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_3_address0 = grp_sha256_update_fu_307_ctx_data_3_address0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_3_address0 = grp_sha256_update_fu_299_ctx_data_3_address0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_3_address0 = grp_sha256_final_fu_287_ctx_data_3_address0;
+        sha256ctx_data_3_address0 = grp_sha256_final_fu_281_ctx_data_3_address0;
     end else begin
         sha256ctx_data_3_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_3_address1 = grp_sha256_update_fu_307_ctx_data_3_address1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_3_address1 = grp_sha256_update_fu_299_ctx_data_3_address1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_3_address1 = grp_sha256_final_fu_287_ctx_data_3_address1;
+        sha256ctx_data_3_address1 = grp_sha256_final_fu_281_ctx_data_3_address1;
     end else begin
         sha256ctx_data_3_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_3_ce0 = grp_sha256_update_fu_307_ctx_data_3_ce0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_3_ce0 = grp_sha256_update_fu_299_ctx_data_3_ce0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_3_ce0 = grp_sha256_final_fu_287_ctx_data_3_ce0;
+        sha256ctx_data_3_ce0 = grp_sha256_final_fu_281_ctx_data_3_ce0;
     end else begin
         sha256ctx_data_3_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_3_ce1 = grp_sha256_update_fu_307_ctx_data_3_ce1;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_3_ce1 = grp_sha256_update_fu_299_ctx_data_3_ce1;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_3_ce1 = grp_sha256_final_fu_287_ctx_data_3_ce1;
+        sha256ctx_data_3_ce1 = grp_sha256_final_fu_281_ctx_data_3_ce1;
     end else begin
         sha256ctx_data_3_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_3_d0 = grp_sha256_update_fu_307_ctx_data_3_d0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_3_d0 = grp_sha256_update_fu_299_ctx_data_3_d0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_3_d0 = grp_sha256_final_fu_287_ctx_data_3_d0;
+        sha256ctx_data_3_d0 = grp_sha256_final_fu_281_ctx_data_3_d0;
     end else begin
         sha256ctx_data_3_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((icmp_ln36_reg_876 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_876 == 1'd0)))) begin
-        sha256ctx_data_3_we0 = grp_sha256_update_fu_307_ctx_data_3_we0;
+    if ((((icmp_ln36_reg_802 == 1'd1) & (1'b1 == ap_CS_fsm_state5)) | ((1'b1 == ap_CS_fsm_state5) & (icmp_ln36_reg_802 == 1'd0)))) begin
+        sha256ctx_data_3_we0 = grp_sha256_update_fu_299_ctx_data_3_we0;
     end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_3_we0 = grp_sha256_final_fu_287_ctx_data_3_we0;
+        sha256ctx_data_3_we0 = grp_sha256_final_fu_281_ctx_data_3_we0;
     end else begin
         sha256ctx_data_3_we0 = 1'b0;
     end
@@ -1379,7 +1315,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        sha256ctx_data_3_we1 = grp_sha256_final_fu_287_ctx_data_3_we1;
+        sha256ctx_data_3_we1 = grp_sha256_final_fu_281_ctx_data_3_we1;
     end else begin
         sha256ctx_data_3_we1 = 1'b0;
     end
@@ -1395,16 +1331,16 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((icmp_ln36_fu_640_p2 == 1'd1) & (icmp_ln33_fu_624_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((icmp_ln36_fu_580_p2 == 1'd1) & (icmp_ln33_fu_564_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state6;
-            end else if (((icmp_ln33_fu_624_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2) & (icmp_ln36_fu_640_p2 == 1'd0))) begin
+            end else if (((icmp_ln33_fu_564_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2) & (icmp_ln36_fu_580_p2 == 1'd0))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state8;
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((icmp_ln38_fu_650_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((icmp_ln38_fu_590_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state5;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -1421,7 +1357,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state6 : begin
-            if (((1'b1 == ap_CS_fsm_state6) & (icmp_ln46_fu_711_p2 == 1'd0))) begin
+            if (((1'b1 == ap_CS_fsm_state6) & (icmp_ln46_fu_651_p2 == 1'd0))) begin
                 ap_NS_fsm = ap_ST_fsm_state7;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state5;
@@ -1431,14 +1367,14 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state6;
         end
         ap_ST_fsm_state8 : begin
-            if (((grp_sha256_final_fu_287_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state8))) begin
+            if (((grp_sha256_final_fu_281_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state8))) begin
                 ap_NS_fsm = ap_ST_fsm_state9;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state8;
             end
         end
         ap_ST_fsm_state9 : begin
-            if (((icmp_ln57_fu_751_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
+            if (((icmp_ln57_fu_691_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state10;
@@ -1453,13 +1389,13 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln39_1_fu_671_p2 = (add_ln39_fu_666_p2 + trunc_ln33_reg_860);
+assign add_ln39_1_fu_611_p2 = (add_ln39_fu_606_p2 + trunc_ln33_reg_786);
 
-assign add_ln39_fu_666_p2 = (trunc_ln36_reg_880 + zext_ln39_1_fu_662_p1);
+assign add_ln39_fu_606_p2 = (trunc_ln36_reg_806 + zext_ln39_1_fu_602_p1);
 
-assign add_ln48_1_fu_731_p2 = (add_ln48_fu_726_p2 + trunc_ln33_reg_860);
+assign add_ln48_1_fu_671_p2 = (add_ln48_fu_666_p2 + trunc_ln33_reg_786);
 
-assign add_ln48_fu_726_p2 = (trunc_ln36_reg_880 + zext_ln48_1_fu_722_p1);
+assign add_ln48_fu_666_p2 = (trunc_ln36_reg_806 + zext_ln48_1_fu_662_p1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -1482,63 +1418,63 @@ assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
 always @ (*) begin
-    ap_block_state5_on_subcall_done = (((icmp_ln36_reg_876 == 1'd1) & (grp_sha256_update_fu_307_ap_done == 1'b0)) | ((grp_sha256_update_fu_307_ap_done == 1'b0) & (icmp_ln36_reg_876 == 1'd0)));
+    ap_block_state5_on_subcall_done = (((icmp_ln36_reg_802 == 1'd1) & (grp_sha256_update_fu_299_ap_done == 1'b0)) | ((grp_sha256_update_fu_299_ap_done == 1'b0) & (icmp_ln36_reg_802 == 1'd0)));
 end
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign digest_address0 = zext_ln59_reg_975;
+assign digest_address0 = zext_ln59_reg_891;
 
-assign grp_sha256_final_fu_287_ap_start = grp_sha256_final_fu_287_ap_start_reg;
+assign grp_sha256_final_fu_281_ap_start = grp_sha256_final_fu_281_ap_start_reg;
 
-assign grp_sha256_update_fu_307_ap_start = grp_sha256_update_fu_307_ap_start_reg;
+assign grp_sha256_update_fu_299_ap_start = grp_sha256_update_fu_299_ap_start_reg;
 
-assign i_3_fu_716_p2 = (i_1_reg_264 + 6'd1);
+assign i_3_fu_656_p2 = (i_1_reg_258 + 6'd1);
 
-assign i_4_fu_656_p2 = (i_0_reg_252 + 7'd1);
+assign i_4_fu_596_p2 = (i_0_reg_246 + 7'd1);
 
-assign i_fu_757_p2 = (i_2_reg_276 + 6'd1);
+assign i_fu_697_p2 = (i_2_reg_270 + 6'd1);
 
-assign icmp_ln33_fu_624_p2 = ((n_0_fu_106 == 32'd0) ? 1'b1 : 1'b0);
+assign icmp_ln33_fu_564_p2 = ((n_0_fu_108 == 32'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln36_fu_640_p2 = ((tmp_49_fu_630_p4 == 26'd0) ? 1'b1 : 1'b0);
+assign icmp_ln36_fu_580_p2 = ((tmp_2_fu_570_p4 == 26'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln38_fu_650_p2 = ((i_0_reg_252 == 7'd64) ? 1'b1 : 1'b0);
+assign icmp_ln38_fu_590_p2 = ((i_0_reg_246 == 7'd64) ? 1'b1 : 1'b0);
 
-assign icmp_ln46_fu_711_p2 = ((zext_ln46_fu_707_p1 == n_0_load_reg_866) ? 1'b1 : 1'b0);
+assign icmp_ln46_fu_651_p2 = ((zext_ln46_fu_647_p1 == n_0_load_reg_792) ? 1'b1 : 1'b0);
 
-assign icmp_ln57_fu_751_p2 = ((i_2_reg_276 == 6'd32) ? 1'b1 : 1'b0);
+assign icmp_ln57_fu_691_p2 = ((i_2_reg_270 == 6'd32) ? 1'b1 : 1'b0);
 
-assign n_fu_681_p2 = ($signed(n_0_load_reg_866) + $signed(32'd4294967232));
+assign n_fu_621_p2 = ($signed(n_0_load_reg_792) + $signed(32'd4294967232));
 
-assign seg_offset_fu_696_p2 = (seg_offset_1_fu_154 + 32'd64);
+assign seg_offset_fu_636_p2 = (seg_offset_1_fu_148 + 32'd64);
 
-assign tmp_49_fu_630_p4 = {{n_0_fu_106[31:6]}};
+assign tmp_2_fu_570_p4 = {{n_0_fu_108[31:6]}};
 
-assign trunc_ln33_fu_552_p1 = base_offset[9:0];
+assign trunc_ln33_fu_502_p1 = base_offset[9:0];
 
-assign trunc_ln36_fu_646_p1 = seg_offset_1_fu_154[9:0];
+assign trunc_ln36_fu_586_p1 = seg_offset_1_fu_148[9:0];
 
-assign zext_ln39_1_fu_662_p1 = i_0_reg_252;
+assign zext_ln39_1_fu_602_p1 = i_0_reg_246;
 
-assign zext_ln39_2_fu_676_p1 = add_ln39_1_fu_671_p2;
+assign zext_ln39_2_fu_616_p1 = add_ln39_1_fu_611_p2;
 
-assign zext_ln39_fu_691_p1 = i_0_reg_252;
+assign zext_ln39_fu_631_p1 = i_0_reg_246;
 
-assign zext_ln46_fu_707_p1 = i_1_reg_264;
+assign zext_ln46_fu_647_p1 = i_1_reg_258;
 
-assign zext_ln48_1_fu_722_p1 = i_1_reg_264;
+assign zext_ln48_1_fu_662_p1 = i_1_reg_258;
 
-assign zext_ln48_2_fu_736_p1 = add_ln48_1_fu_731_p2;
+assign zext_ln48_2_fu_676_p1 = add_ln48_1_fu_671_p2;
 
-assign zext_ln48_fu_746_p1 = i_1_reg_264;
+assign zext_ln48_fu_686_p1 = i_1_reg_258;
 
-assign zext_ln59_fu_763_p1 = i_2_reg_276;
+assign zext_ln59_fu_703_p1 = i_2_reg_270;
 
 always @ (posedge ap_clk) begin
-    zext_ln59_reg_975[63:6] <= 58'b0000000000000000000000000000000000000000000000000000000000;
+    zext_ln59_reg_891[63:6] <= 58'b0000000000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //sha256

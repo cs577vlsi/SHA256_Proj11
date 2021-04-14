@@ -2,12 +2,12 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Apr 10 15:00:09 2021
-# Process ID: 4636
-# Current directory: D:/VLSINew/SHA/solution2_Kintex/sim/verilog
+# Start of session at: Wed Apr 14 11:39:13 2021
+# Process ID: 4424
+# Current directory: D:/VLSINew/SHA/solution2_Kintex_with_hardware/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/sha256/xsim_script.tcl}
-# Log file: D:/VLSINew/SHA/solution2_Kintex/sim/verilog/xsim.log
-# Journal file: D:/VLSINew/SHA/solution2_Kintex/sim/verilog\xsim.jou
+# Log file: D:/VLSINew/SHA/solution2_Kintex_with_hardware/sim/verilog/xsim.log
+# Journal file: D:/VLSINew/SHA/solution2_Kintex_with_hardware/sim/verilog\xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/sha256/xsim_script.tcl
 # xsim {sha256} -autoloadwcfg -tclbatch {sha256.tcl}
@@ -92,6 +92,6 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : 4 / 5 [0.67%] @ "62155000"
 // RTL Simulation : 5 / 5 [100.00%] @ "89785000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 89825 ns : File "D:/VLSINew/SHA/solution2_Kintex/sim/verilog/sha256.autotb.v" Line 287
+$finish called at time : 89825 ns : File "D:/VLSINew/SHA/solution2_Kintex_with_hardware/sim/verilog/sha256.autotb.v" Line 287
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Apr 10 15:00:21 2021...
+INFO: [Common 17-206] Exiting xsim at Wed Apr 14 11:39:19 2021...

@@ -85,25 +85,37 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/SHA_new\/SHA_new\/sha256_impl.c",
-      "..\/..\/SHA_new\/SHA_new\/sha256.c"
+      "..\/..\/SHA_new\/SHA_new\/sha256.c",
+      "..\/..\/SHA_new\/SHA_new\/sha256_impl.c"
     ],
     "Vhdl": [
+      "impl\/vhdl\/CH.vhd",
+      "impl\/vhdl\/EP0.vhd",
+      "impl\/vhdl\/EP1.vhd",
+      "impl\/vhdl\/MAJ.vhd",
       "impl\/vhdl\/sha256_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/sha256_final.vhd",
       "impl\/vhdl\/sha256_seg_buf.vhd",
       "impl\/vhdl\/sha256_sha256ctx_bkb.vhd",
       "impl\/vhdl\/sha256_transform.vhd",
       "impl\/vhdl\/sha256_update.vhd",
+      "impl\/vhdl\/SIG0.vhd",
+      "impl\/vhdl\/SIG1.vhd",
       "impl\/vhdl\/sha256.vhd"
     ],
     "Verilog": [
+      "impl\/verilog\/CH.v",
+      "impl\/verilog\/EP0.v",
+      "impl\/verilog\/EP1.v",
+      "impl\/verilog\/MAJ.v",
       "impl\/verilog\/sha256_AXILiteS_s_axi.v",
       "impl\/verilog\/sha256_final.v",
       "impl\/verilog\/sha256_seg_buf.v",
       "impl\/verilog\/sha256_sha256ctx_bkb.v",
       "impl\/verilog\/sha256_transform.v",
       "impl\/verilog\/sha256_update.v",
+      "impl\/verilog\/SIG0.v",
+      "impl\/verilog\/SIG1.v",
       "impl\/verilog\/sha256.v"
     ],
     "SwDriver": [
@@ -492,23 +504,421 @@
       "Instances": [
         {
           "ModuleName": "sha256_final",
-          "InstanceName": "grp_sha256_final_fu_287",
+          "InstanceName": "grp_sha256_final_fu_281",
           "Instances": [{
               "ModuleName": "sha256_transform",
-              "InstanceName": "grp_sha256_transform_fu_1393"
+              "InstanceName": "grp_sha256_transform_fu_1361",
+              "Instances": [
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_862"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_872"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_879"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_886"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_893"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_900"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_907"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_914"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_921"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_931"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_938"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_945"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_952"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_959"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_966"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_973"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_980"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_986"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_991"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_996"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1001"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1006"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1011"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1016"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1021"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1027"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1032"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1037"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1042"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1047"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1052"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1057"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1062"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1067"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1072"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1077"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1082"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1087"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1092"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1097"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1102"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1107"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1112"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1117"
+                }
+              ]
             }]
         },
         {
           "ModuleName": "sha256_update",
-          "InstanceName": "grp_sha256_update_fu_307",
+          "InstanceName": "grp_sha256_update_fu_299",
           "Instances": [{
               "ModuleName": "sha256_transform",
-              "InstanceName": "grp_sha256_transform_fu_274"
+              "InstanceName": "grp_sha256_transform_fu_246",
+              "Instances": [
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_862"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_872"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_879"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_886"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_893"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_900"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_907"
+                },
+                {
+                  "ModuleName": "CH",
+                  "InstanceName": "grp_CH_fu_914"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_921"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_931"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_938"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_945"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_952"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_959"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_966"
+                },
+                {
+                  "ModuleName": "MAJ",
+                  "InstanceName": "grp_MAJ_fu_973"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_980"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_986"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_991"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_996"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1001"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1006"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1011"
+                },
+                {
+                  "ModuleName": "EP1",
+                  "InstanceName": "grp_EP1_fu_1016"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1021"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1027"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1032"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1037"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1042"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1047"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1052"
+                },
+                {
+                  "ModuleName": "EP0",
+                  "InstanceName": "grp_EP0_fu_1057"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1062"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1067"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1072"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1077"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1082"
+                },
+                {
+                  "ModuleName": "SIG0",
+                  "InstanceName": "grp_SIG0_fu_1087"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1092"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1097"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1102"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1107"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1112"
+                },
+                {
+                  "ModuleName": "SIG1",
+                  "InstanceName": "grp_SIG1_fu_1117"
+                }
+              ]
             }]
         }
       ]
     },
     "Info": {
+      "SIG1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "SIG0": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "EP1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "CH": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "EP0": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "MAJ": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
       "sha256_transform": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
@@ -539,13 +949,145 @@
       }
     },
     "Metrics": {
+      "SIG1": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "0.474"
+        },
+        "Area": {
+          "FF": "0",
+          "LUT": "64",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "SIG0": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "0.474"
+        },
+        "Area": {
+          "FF": "0",
+          "LUT": "64",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "EP1": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "0.474"
+        },
+        "Area": {
+          "FF": "0",
+          "LUT": "64",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "CH": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "0.474"
+        },
+        "Area": {
+          "FF": "0",
+          "LUT": "128",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "EP0": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "0.474"
+        },
+        "Area": {
+          "FF": "0",
+          "LUT": "64",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "MAJ": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "0.474"
+        },
+        "Area": {
+          "FF": "0",
+          "LUT": "128",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
       "sha256_transform": {
         "Latency": {
-          "LatencyBest": "39",
-          "LatencyAvg": "39",
-          "LatencyWorst": "39",
+          "LatencyBest": "40",
+          "LatencyAvg": "40",
+          "LatencyWorst": "40",
           "PipelineII": "8",
-          "PipelineDepth": "40",
+          "PipelineDepth": "41",
           "PipelineType": "function"
         },
         "Timing": {
@@ -555,8 +1097,8 @@
         },
         "Area": {
           "BRAM_18K": "0",
-          "FF": "15341",
-          "LUT": "46693",
+          "FF": "11278",
+          "LUT": "23504",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -565,10 +1107,10 @@
         "Latency": {
           "LatencyBest": "1",
           "LatencyAvg": "",
-          "LatencyWorst": "48",
+          "LatencyWorst": "49",
           "PipelineIIMin": "1",
-          "PipelineIIMax": "48",
-          "PipelineII": "1 ~ 48",
+          "PipelineIIMax": "49",
+          "PipelineII": "1 ~ 49",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -581,17 +1123,17 @@
             "Name": "Loop 1",
             "TripCount": "",
             "LatencyMin": "0",
-            "LatencyMax": "47",
-            "Latency": "0 ~ 47",
+            "LatencyMax": "48",
+            "Latency": "0 ~ 48",
             "PipelineII": "",
             "PipelineDepthMin": "3",
-            "PipelineDepthMax": "47",
-            "PipelineDepth": "3 ~ 47"
+            "PipelineDepthMax": "48",
+            "PipelineDepth": "3 ~ 48"
           }],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "15764",
-          "LUT": "47391",
+          "FF": "11638",
+          "LUT": "24058",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -599,11 +1141,11 @@
       "sha256_final": {
         "Latency": {
           "LatencyBest": "58",
-          "LatencyAvg": "100",
-          "LatencyWorst": "118",
+          "LatencyAvg": "101",
+          "LatencyWorst": "120",
           "PipelineIIMin": "58",
-          "PipelineIIMax": "118",
-          "PipelineII": "58 ~ 118",
+          "PipelineIIMax": "120",
+          "PipelineII": "58 ~ 120",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -634,8 +1176,8 @@
         ],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "16335",
-          "LUT": "48800",
+          "FF": "12209",
+          "LUT": "25302",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -644,10 +1186,10 @@
         "Latency": {
           "LatencyBest": "461",
           "LatencyAvg": "",
-          "LatencyWorst": "18085",
+          "LatencyWorst": "18187",
           "PipelineIIMin": "462",
-          "PipelineIIMax": "18086",
-          "PipelineII": "462 ~ 18086",
+          "PipelineIIMax": "18188",
+          "PipelineII": "462 ~ 18188",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -661,12 +1203,12 @@
             "Name": "Loop 1",
             "TripCount": "",
             "LatencyMin": "336",
-            "LatencyMax": "17900",
-            "Latency": "336 ~ 17900",
+            "LatencyMax": "18000",
+            "Latency": "336 ~ 18000",
             "PipelineII": "",
             "PipelineDepthMin": "28",
-            "PipelineDepthMax": "179",
-            "PipelineDepth": "28 ~ 179",
+            "PipelineDepthMax": "180",
+            "PipelineDepth": "28 ~ 180",
             "Loops": [
               {
                 "Name": "Loop 1.1",
@@ -696,8 +1238,8 @@
         ],
         "Area": {
           "BRAM_18K": "9",
-          "FF": "33600",
-          "LUT": "97687",
+          "FF": "25156",
+          "LUT": "50808",
           "URAM": "0",
           "DSP48E": "0"
         }
@@ -714,7 +1256,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-04-11 11:40:16 +0530",
+    "Time": "2021-04-14 12:12:50 +0530",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

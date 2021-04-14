@@ -154,10 +154,10 @@ void AESL_WRAP_sha256( char *, signed int , signed int ,  char *);
 
 
 /* Global Variable Definitions and Initialization */
-signed int bases[5] = { 0u, 1u, 0u, 3u, 0u };
-signed int sizes[5] = { 0u, 1u, 64u, 127u, 256u };
-static  char aesl_internal__OC_str[15] = "Data to hash: ";
 static  char aesl_internal__OC_str3[30] = "Test %d, base: %d length %d:\n";
+signed int bases[5] = { 0u, 1u, 0u, 3u, 0u };
+static  char aesl_internal__OC_str[15] = "Data to hash: ";
+signed int sizes[5] = { 0u, 1u, 64u, 127u, 256u };
 static  char aesl_internal__OC_str4[12] = "SHA256_SW: ";
 static  char aesl_internal__OC_str5[6] = "%02X ";
 static  char aesl_internal__OC_str7[12] = "SHA256_HW: ";

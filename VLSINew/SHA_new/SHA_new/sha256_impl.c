@@ -4,16 +4,16 @@
 #include <string.h>
 
 // DBL_INT_ADD treats two unsigned ints a and b as one 64-bit integer and adds c to it
-#define DBL_INT_ADD(a,b,c) if (a > 0xffffffff - (c)) ++b; a += c;
-#define ROTLEFT(a,b) (((a) << (b)) | ((a) >> (32-(b))))
-#define ROTRIGHT(a,b) (((a) >> (b)) | ((a) << (32-(b))))
+//#define DBL_INT_ADD(a,b,c) if (a > 0xffffffff - (c)) ++b; a += c;
+#define ROTLEFT(a,b) (((a) << (b)) | ((a) >> (32-(b))))           //not used
+//#define ROTRIGHT(a,b) (((a) >> (b)) | ((a) << (32-(b))))
 
-#define CH(x,y,z) (((x) & (y)) ^ (~(x) & (z)))
-#define MAJ(x,y,z) (((x) & (y)) ^ ((x) & (z)) ^ ((y) & (z)))
-#define EP0(x) (ROTRIGHT(x,2) ^ ROTRIGHT(x,13) ^ ROTRIGHT(x,22))
-#define EP1(x) (ROTRIGHT(x,6) ^ ROTRIGHT(x,11) ^ ROTRIGHT(x,25))
-#define SIG0(x) (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3))
-#define SIG1(x) (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10))
+//#define CH(x,y,z) (((x) & (y)) ^ (~(x) & (z)))
+//#define MAJ(x,y,z) (((x) & (y)) ^ ((x) & (z)) ^ ((y) & (z)))
+//#define EP0(x) (ROTRIGHT(x,2) ^ ROTRIGHT(x,13) ^ ROTRIGHT(x,22))
+//#define EP1(x) (ROTRIGHT(x,6) ^ ROTRIGHT(x,11) ^ ROTRIGHT(x,25))
+//#define SIG0(x) (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3))
+//#define SIG1(x) (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10))
 
 uint k[64] = {
    0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
@@ -26,6 +26,38 @@ uint k[64] = {
    0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2
 };
 
+void DBL_INT_ADD(uint *a, uint *b, uint c) {
+   if (a > 0xffffffff - (c)) ++b; a += c;
+   return;
+}
+
+uint ROTRIGHT(uint a,uint b){
+   return (((a) >> (b)) | ((a) << (32-(b))));
+}
+
+uint CH(uint x, uint y, uint z){
+   return (((x) & (y)) ^ (~(x) & (z)));
+}
+
+uint MAJ(uint x, uint y,uint z){
+   return (((x) & (y)) ^ ((x) & (z)) ^ ((y) & (z)));
+}
+
+uint EP0(uint x){
+   return (ROTRIGHT(x,2) ^ ROTRIGHT(x,13) ^ ROTRIGHT(x,22));
+}
+
+uint EP1(uint x){
+   return (ROTRIGHT(x,6) ^ ROTRIGHT(x,11) ^ ROTRIGHT(x,25));
+}
+
+uint SIG0(uint x){
+   return (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3));
+}
+
+uint SIG1(uint x){
+   return (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10));
+}
 
 void sha256_transform(SHA256_CTX *ctx, uchar data[])
 {  
